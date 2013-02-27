@@ -1,0 +1,36 @@
+<!-- more -->
+
+
+<hr />
+
+<p>layout: post
+title: &#8220;解决Debian四格问题（乱码）&#8221;
+date: 2013-02-28 01:43
+comments: true</p>
+
+<h2>categories: </h2>
+
+<p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、进入到下载文件所在目录：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
+</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
