@@ -9,13 +9,9 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="tips: 1
-2
-os:ubuntu10.04
-Terminal:zsh 1、安装curl: 1
-sudo apt-get install curl before install ruby you should install libyaml-dev，openssl: 1
-2
-sudo apt- &hellip;">
+  <meta name="description" content="1、用自带的firefox下载ttf-wqy-zenhei: 1
+http://mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb 2、进入到下载文件所在目录： 1
+cd &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +66,65 @@ sudo apt- &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、进入到下载文件所在目录：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
+</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -305,45 +360,6 @@ sudo apt- &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/28/solve-the-debian-lang/">Solve the Debian Lang</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-28T00:00:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"></div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/02/28/solve-the-debian-lang/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -357,15 +373,15 @@ sudo apt- &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/28/otcopress-blogs/">otcopress-blogs</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/02/28/night/">night</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/28/solve-the-debian-lang/">Solve The Debian Lang</a>
       </li>
     
   </ul>
