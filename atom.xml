@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-04T22:21:56+08:00</updated>
+  <updated>2013-03-04T22:26:42+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -18,7 +18,16 @@
     <link href="http://ZuLove.github.com/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/"/>
     <updated>2013-03-04T16:54:00+08:00</updated>
     <id>http://ZuLove.github.com/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu10</span><span class="mf">.04</span>
+</span><span class='line'><span class="nl">Terminal:</span><span class="n">zsh</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、全新系统请安装如下依赖：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -47,7 +56,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>下载vim73:</p>
+<p>2、下载vim73:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">hg</span> <span class="n">clone</span> <span class="nl">https:</span><span class="c1">//vim.googlecode.com/hg/ vim</span>
@@ -68,28 +77,29 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>解压vim-7.3.tar.bz2:</p>
+<p>3、解压vim-7.3.tar.bz2:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>编译：</p>
+<p>4、编译：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">fontset</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gnome2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gnome</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>安装:</p>
+<p>5、安装:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>问题1、Gtk-WARNING **: Invalid input string</p>
+<p>  以下是在我的电脑上编译安装所出现的问题及解决办法：
+问题1、Gtk-WARNING **: Invalid input string</p>
 
 <pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
               在前面加入下面四行代码：
