@@ -9,9 +9,22 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="1、用自带的firefox下载ttf-wqy-zenhei: 1
-http://mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb 2、进入到下载文件所在目录： 1
-cd &hellip;">
+  <meta name="description" content="1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+sudo apt-get install build-essential
+sudo apt-get install xorg-dev
+sudo apt-get install libncurses5-dev
+sudo apt-get &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +79,155 @@ cd &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">Compile_vim73_in_ubuntu10.04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-04T16:54:00+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">xorg</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libncurses5</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnome2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnomeui</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgtk2</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libatk1</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libbonoboui2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libcairo2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libx11</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxpm</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxt</span><span class="o">-</span><span class="n">dev</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>下载vim73:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">hg</span> <span class="n">clone</span> <span class="nl">https:</span><span class="c1">//vim.googlecode.com/hg/ vim</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>tips:安装mercurial,否则不能用hg clone</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">mercurial</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或在手工下载vim73:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解压vim-7.3.tar.bz2:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>编译：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">fontset</span>
+</span><span class='line'><span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gnome2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gnome</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>问题1、Gtk-WARNING **: Invalid input string</p>
+
+<pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
+              在前面加入下面四行代码：
+              set langmenu=zh_CN.UTF-8                 "设置菜单语言
+              source $VIMRUNTIME/delmenu.vim  "导入删除菜单脚本，删除乱码的菜单
+              source $VIMRUNTIME/menu.vim          "导入正常的菜单脚本
+              language messages zh_CN.utf-8          "设置提示信息语言
+</code></pre>
+
+<p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>
+
+<pre><code>              GLib-GObject-CRITICAL ………………，键入gedit也是出现这样的问题，貌似错误信息比键入gvim时更多，
+              其实此时已经不是gvim的问题了,很可能由于用户装了gnome-globalmenu的面板工具导致的。
+              解决办法：
+              在终端中输入gconf-editor,打开配置编辑器
+              找到/apps/gnome_settings_daemon/gtk-modules/
+</code></pre>
+
+<p>去掉globalmenu-plugin前的勾</p>
+
+<p>问题3、在系统应用程序菜单中没有gvim选项，怎么办？</p>
+
+<pre><code>              解决办法：（记住，用root权限编辑）
+              打开终端，sudo vim /usr/share/applications/gvim.desktop     //没有的话，vim会提示new file
+              将下面的内容输入，
+              [Desktop Entry]  
+              Name=Gvim
+              Comment[zh_CN]=Gvim编辑器
+              Exec=gvim
+              Icon=/usr/share/icons/Macbuntu-Icons/apps/48/vim_logo.png//此处图片可自定义，大小最好为128x128,png格式
+              Terminal=false
+              X-MultipleArgs=false
+              Type=Application
+              Categories=Application;Development;
+              Encoding=UTF-8
+              StartupNotify=true 
+              Name=GVim Text Editor
+              :x保存退出
+              这时，你打开应用程序-编程菜单，便看到了GVim Text Editor
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -371,6 +533,10 @@ cd &hellip;">
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">Compile_vim73_in_ubuntu10.04</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a>
