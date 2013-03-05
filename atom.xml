@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-05T21:56:11+08:00</updated>
+  <updated>2013-03-05T22:05:39+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -57,6 +57,39 @@
 </span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
 </span><span class='line'>    <span class="n">endfunction</span>
 </span><span class='line'><span class="n">endif</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、将开始菜单中的Gvim快捷方式修改成如下：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">I</span><span class="err">：</span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">applications</span><span class="o">/</span><span class="n">gvim</span><span class="p">.</span><span class="n">desktop</span>
+</span><span class='line'><span class="n">II</span><span class="err">：</span>
+</span><span class='line'><span class="p">[</span><span class="n">Desktop</span> <span class="n">Entry</span><span class="p">]</span>
+</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">Gvim</span>
+</span><span class='line'><span class="n">Comment</span><span class="p">[</span><span class="n">zh_CN</span><span class="p">]</span><span class="o">=</span><span class="n">Gvim</span><span class="err">编辑器</span>
+</span><span class='line'><span class="n">Exec</span><span class="o">=</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span>
+</span><span class='line'><span class="n">Icon</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icons</span><span class="o">/</span><span class="n">Macbuntu</span><span class="o">-</span><span class="n">Icons</span><span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="mi">48</span><span class="o">/</span><span class="n">vim_logo</span><span class="p">.</span><span class="n">png</span>
+</span><span class='line'><span class="n">Terminal</span><span class="o">=</span><span class="n">false</span>
+</span><span class='line'><span class="n">X</span><span class="o">-</span><span class="n">MultipleArgs</span><span class="o">=</span><span class="n">false</span>
+</span><span class='line'><span class="n">Type</span><span class="o">=</span><span class="n">Application</span>
+</span><span class='line'><span class="n">Categories</span><span class="o">=</span><span class="n">Application</span><span class="p">;</span><span class="n">Development</span><span class="p">;</span>
+</span><span class='line'><span class="n">Encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span><span class='line'><span class="n">StartupNotify</span><span class="o">=</span><span class="n">true</span>
+</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">GVim</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -153,11 +186,8 @@
 问题1、Gtk-WARNING **: Invalid input string</p>
 
 <pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
-              在前面加入下面四行代码：
+              在前面加入下面代码：
               set langmenu=zh_CN.UTF-8                 "设置菜单语言
-              source $VIMRUNTIME/delmenu.vim  "导入删除菜单脚本，删除乱码的菜单
-              source $VIMRUNTIME/menu.vim          "导入正常的菜单脚本
-              language messages zh_CN.utf-8          "设置提示信息语言
 </code></pre>
 
 <p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>

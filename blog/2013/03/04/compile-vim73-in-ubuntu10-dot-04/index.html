@@ -190,11 +190,8 @@ sudo apt-get install xorg-dev &hellip;">
 问题1、Gtk-WARNING **: Invalid input string</p>
 
 <pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
-              在前面加入下面四行代码：
+              在前面加入下面代码：
               set langmenu=zh_CN.UTF-8                 "设置菜单语言
-              source $VIMRUNTIME/delmenu.vim  "导入删除菜单脚本，删除乱码的菜单
-              source $VIMRUNTIME/menu.vim          "导入正常的菜单脚本
-              language messages zh_CN.utf-8          "设置提示信息语言
 </code></pre>
 
 <p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>
