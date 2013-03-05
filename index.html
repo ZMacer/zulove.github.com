@@ -11,21 +11,10 @@
   
   <meta name="description" content="tips: 1
 2
-os:ubuntu10.04
-Terminal:zsh 1、全新系统请安装如下依赖： 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-sudo apt-get install build-essential
-sudo apt-get install xorg-dev &hellip;">
+os:Ubuntu 10.04
+shell:zsh 5.0.0 1、安装wmctrl: 1
+sudo apt-get install wmctrl 2、在~/.zshrc中加入： 1
+alias gvim=&#39;gvim -c &quot;call &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +69,84 @@ sudo apt-get install xorg-dev &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/05/windows-max/">Linux和windows 下Gvim窗口自动最大化</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">Ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span> <span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装wmctrl:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">wmctrl</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、在~/.zshrc中加入：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">alias</span> <span class="n">gvim</span><span class="o">=</span><span class="err">&#39;</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span><span class="err">&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、在~/.vimrc中加入：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
+</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
+</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
+</span><span class='line'>    <span class="n">endfunction</span>
+</span><span class='line'><span class="n">endif</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -569,6 +636,10 @@ sudo apt-get install xorg-dev &hellip;">
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/05/windows-max/">Linux和windows 下Gvim窗口自动最大化</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">Compile_vim73_in_ubuntu10.04</a>
