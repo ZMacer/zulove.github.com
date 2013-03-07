@@ -5,13 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>解决Debian四格问题（乱码） - ZLoves world</title>
+  <title>Vim_Plugin_clang_complete - ZLoves world</title>
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="1、用自带的firefox下载ttf-wqy-zenhei: 1
-http://mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb 2、进入到下载文件所在目录： 1
-cd &hellip;">
+  <meta name="description" content="tips: 1
+2
+os:ubuntu 10.04
+shell:zsh-5.0.0 1、安装clang: 1
+sudo apt-get install clang 2、下载clang_complete: 1
+http://www.vim.org/scripts/script.php? &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +23,7 @@ cd &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ZuLove.github.com/blog/2013/02/28/solve-the-debian-lang/">
+  <link rel="canonical" href="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +72,7 @@ cd &hellip;">
   
   <header>
     
-      <h1 class="entry-title">解决Debian四格问题（乱码）</h1>
+      <h1 class="entry-title">Vim_Plugin_clang_complete</h1>
     
     
       <p class="meta">
@@ -85,33 +88,51 @@ cd &hellip;">
   
 
 
-<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
+<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、进入到下载文件所在目录：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装ttf-wqy-zenhei:</p>
+<div class="entry-content"><p>tips:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
-</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装clang:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、下载clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、配置.vimrc:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -138,7 +159,7 @@ cd &hellip;">
   
 
 
-<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
+<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
       
 
 
@@ -146,7 +167,7 @@ cd &hellip;">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ZuLove.github.com/blog/2013/02/28/solve-the-debian-lang/" data-via="" data-counturl="http://ZuLove.github.com/blog/2013/02/28/solve-the-debian-lang/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/" data-via="" data-counturl="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/" >Tweet</a>
   
   
   
@@ -155,10 +176,8 @@ cd &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/28/otcopress-blogs/" title="Previous Post: otcopress-blogs">&laquo; otcopress-blogs</a>
+        <a class="basic-alignment left" href="/blog/2013/03/05/windows-max/" title="Previous Post: Linux和windows 下Gvim窗口自动最大化">&laquo; Linux和windows 下Gvim窗口自动最大化</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/" title="Next Post: Compile_vim73_in_ubuntu10.04">Compile_vim73_in_ubuntu10.04 &raquo;</a>
       
     </p>
   </footer>

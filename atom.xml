@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-05T22:05:39+08:00</updated>
+  <updated>2013-03-07T23:43:53+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vim_Plugin_clang_complete]]></title>
+    <link href="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/"/>
+    <updated>2013-03-07T23:25:00+08:00</updated>
+    <id>http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete</id>
+    <content type="html"><![CDATA[<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装clang:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、下载clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、配置.vimrc:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Linux和windows 下Gvim窗口自动最大化]]></title>
