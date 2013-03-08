@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-07T23:43:53+08:00</updated>
+  <updated>2013-03-08T10:50:59+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[update_vim_latest]]></title>
+    <link href="http://ZuLove.github.com/blog/2013/03/08/update-vim-latest/"/>
+    <updated>2013-03-08T09:51:00+08:00</updated>
+    <id>http://ZuLove.github.com/blog/2013/03/08/update-vim-latest</id>
+    <content type="html"><![CDATA[<p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<p>http://www.vim.org/runtime.php</p>
+
+<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Vim_Plugin_clang_complete]]></title>

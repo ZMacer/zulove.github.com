@@ -5,16 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Vim_Plugin_clang_complete - ZLoves world</title>
+  <title>update_vim_latest - ZLoves world</title>
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="tips: 1
+  <meta name="description" content="安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见: http://www.vim.org/runtime.php tips: 1
 2
 os:ubuntu 10.04
-shell:zsh-5.0.0 1、安装clang: 1
-sudo apt-get install clang 2、下载clang_complete: 1
-http://www.vim.org/scripts/script.php? &hellip;">
+shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +21,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/">
+  <link rel="canonical" href="http://ZuLove.github.com/blog/2013/03/08/update-vim-latest/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,7 +70,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Vim_Plugin_clang_complete</h1>
+      <h1 class="entry-title">Update_vim_latest</h1>
     
     
       <p class="meta">
@@ -88,14 +86,18 @@ http://www.vim.org/scripts/script.php? &hellip;">
   
 
 
-<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>tips:</p>
+<div class="entry-content"><p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<p>http://www.vim.org/runtime.php</p>
+
+<p>tips:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -104,35 +106,26 @@ http://www.vim.org/scripts/script.php? &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>1、安装clang:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、下载clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、配置.vimrc:</p>
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -159,7 +152,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
   
 
 
-<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
       
 
 
@@ -167,7 +160,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/" data-via="" data-counturl="http://ZuLove.github.com/blog/2013/03/07/vim-plugin-clang-complete/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ZuLove.github.com/blog/2013/03/08/update-vim-latest/" data-via="" data-counturl="http://ZuLove.github.com/blog/2013/03/08/update-vim-latest/" >Tweet</a>
   
   
   
@@ -176,10 +169,8 @@ http://www.vim.org/scripts/script.php? &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/03/05/windows-max/" title="Previous Post: Linux和windows 下Gvim窗口自动最大化">&laquo; Linux和windows 下Gvim窗口自动最大化</a>
+        <a class="basic-alignment left" href="/blog/2013/03/07/vim-plugin-clang-complete/" title="Previous Post: Vim_Plugin_clang_complete">&laquo; Vim_Plugin_clang_complete</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/03/08/update-vim-latest/" title="Next Post: update_vim_latest">update_vim_latest &raquo;</a>
       
     </p>
   </footer>
