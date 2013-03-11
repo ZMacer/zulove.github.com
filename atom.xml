@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-08T13:22:14+08:00</updated>
+  <updated>2013-03-11T16:27:56+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -270,7 +270,7 @@
 <p>4、编译：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">fontset</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gnome2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gnome</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gpm</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">acl</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">x</span><span class="o">=</span><span class="n">yes</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gtk2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">cscope</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">netbeans</span>  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span><span class="o">=</span><span class="n">dynamic</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
