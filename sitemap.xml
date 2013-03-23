@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://ZuLove.github.com/blog/2013/02/28/night/</loc>
-        <lastmod>2013-03-23T14:04:02+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://ZuLove.github.com/blog/2013/02/28/otcopress-blogs/</loc>
         <lastmod>2013-03-23T14:04:02+08:00</lastmod>
     </url>
@@ -34,7 +30,7 @@
     </url>
     <url>
         <loc>http://ZuLove.github.com/blog/2013/03/23/change-blogs-bg-header-fonts/</loc>
-        <lastmod>2013-03-23T23:22:53+08:00</lastmod>
+        <lastmod>2013-03-23T23:38:38+08:00</lastmod>
     </url>
     <url>
         <loc>http://ZuLove.github.com/robots.txt</loc>
@@ -42,10 +38,10 @@
     </url>
     <url>
         <loc>http://ZuLove.github.com/blog/archives/</loc>
-        <lastmod>2013-03-23T23:22:53+08:00</lastmod>
+        <lastmod>2013-03-23T23:38:38+08:00</lastmod>
     </url>
     <url>
         <loc>http://ZuLove.github.com/</loc>
-        <lastmod>2013-03-23T23:22:53+08:00</lastmod>
+        <lastmod>2013-03-23T23:38:38+08:00</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-23T23:23:16+08:00</updated>
+  <updated>2013-03-23T23:38:50+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -18,7 +18,22 @@
     <link href="http://ZuLove.github.com/blog/2013/03/23/change-blogs-bg-header-fonts/"/>
     <updated>2013-03-23T22:49:00+08:00</updated>
     <id>http://ZuLove.github.com/blog/2013/03/23/change-blogs-bg-header-fonts</id>
-    <content type="html"><![CDATA[<p>First.change the background colors by adding the following lines to ~/octopress/sass/custom/_colors.scss</p>
+    <content type="html"><![CDATA[<p> Add &#8220;Fork me on GitHub&#8221; like this:
+I、add some code in ~/octopress/source/_includes/head.html.
+II、add pictures into ~/octopress/source/images/forkme.png.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;https://github.com/ZuLove/zulove.github.com&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s">&quot;Fork me on GitHub&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;/images/forkme.png&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;position:absolute; top: 0px; right: 0;&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>First.change the background colors by adding the following lines to ~/octopress/sass/custom/_colors.scss</p>
 
 <figure class='code'><figcaption><span> (_colors.scss)</span> <a href='http://ZuLove.github.com/downloads/code/_colors.scss'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -772,15 +787,6 @@
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[night]]></title>
-    <link href="http://ZuLove.github.com/blog/2013/02/28/night/"/>
-    <updated>2013-02-28T01:33:00+08:00</updated>
-    <id>http://ZuLove.github.com/blog/2013/02/28/night</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
