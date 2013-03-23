@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-23T23:11:28+08:00</updated>
+  <updated>2013-03-23T23:23:16+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -113,6 +113,53 @@
 </span><span class='line'><span class="c1">//$pre-bg: $base03;</span>
 </span><span class='line'><span class="c1">//$pre-border: darken($base02, 5);</span>
 </span><span class='line'><span class="c1">//$pre-color: $base1;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Second,change header fonts
+(1)、add the font-family CSS to ~/octopress/sass/custom/_fonts.scss thusly:</p>
+
+<figure class='code'><figcaption><span> (_fonts.scss)</span> <a href='http://ZuLove.github.com/downloads/code/_fonts.scss'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="c1">// Here you can easily change font faces which are used in your site.</span>
+</span><span class='line'><span class="c1">// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works. your sites&#39;s.</span>
+</span><span class='line'><span class="c1">// If you love to use Web Fonts, you also need to add some lines to source/_includes/custom/head.html</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//$sans: &quot;Optima&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$serif: &quot;Baskerville&quot;, serif;</span>
+</span><span class='line'><span class="c1">//$mono: &quot;Courier&quot;, monospace;</span>
+</span><span class='line'><span class="c1">//$heading-font-family: &quot;Verdana&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$header-title-font-family: &quot;Futura&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$header-subtitle-font-family: &quot;Futura&quot;, sans-serif;</span>
+</span><span class='line'><span class="na">$header-title-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span><span class='line'><span class="na">$header-subtitle-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span><span class='line'><span class="na">$heading-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(2)、edit ~/octopress/source/_includes/custom/head.html like this:</p>
+
+<figure class='code'><figcaption><span> (head.html)</span> <a href='http://ZuLove.github.com/downloads/code/head.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Arvo&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
