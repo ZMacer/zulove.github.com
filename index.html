@@ -169,8 +169,6 @@
     <li class="loading">Status updating&#8230;</li>
   </ul>
   
-  <a href="https://github.com/ZuLove">@ZuLove</a> on GitHub
-  
   <script type="text/javascript">
     $.domReady(function(){
         if (!window.jXHR){
@@ -184,7 +182,7 @@
         github.showRepos({
             user: 'ZuLove',
             count: 0,
-            skip_forks: true,
+            skip_forks: false,
             target: '#gh_repos'
         });
     });
