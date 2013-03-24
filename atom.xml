@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-24T15:57:04+08:00</updated>
+  <updated>2013-03-24T15:59:10+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLove]]></name>
@@ -14,11 +14,23 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress使用Disqus留言系统]]></title>
+    <title type="html"><![CDATA[Octopress Use Disqus]]></title>
     <link href="http://ZuLove.github.com/blog/2013/03/23/octopress-use-disqus/"/>
-    <updated>2013-03-23T23:45:00+08:00</updated>
+    <updated>2013-03-23T00:00:00+08:00</updated>
     <id>http://ZuLove.github.com/blog/2013/03/23/octopress-use-disqus</id>
-    <content type="html"><![CDATA[<p>Octopress没有默认的留言系统，不过，可以使用Disqus。
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<hr />
+
+<p>layout: post
+title: &#8220;Octopress使用Disqus留言系统&#8221;
+date: 2013-03-23 23:45
+comments: true</p>
+
+<h2>categories: </h2>
+
+<p>Octopress没有默认的留言系统，不过，可以使用Disqus。
 开启也Disqus留言系统也很简单，
 开启也Disqus留言系统也很简单，
 首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。如果你开启，相关文章的广告功能， 甚至可以通过点击量赚钱。
@@ -39,11 +51,23 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[change blogs bg header fonts]]></title>
+    <title type="html"><![CDATA[Change Blogs Bg Header Fonts]]></title>
     <link href="http://ZuLove.github.com/blog/2013/03/23/change-blogs-bg-header-fonts/"/>
-    <updated>2013-03-23T22:49:00+08:00</updated>
+    <updated>2013-03-23T00:00:00+08:00</updated>
     <id>http://ZuLove.github.com/blog/2013/03/23/change-blogs-bg-header-fonts</id>
-    <content type="html"><![CDATA[<p> Add &#8220;Fork me on GitHub&#8221; like this:
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<hr />
+
+<p>layout: post
+title: &#8220;change blogs bg header fonts&#8221;
+date: 2013-03-23 22:49
+comments: true</p>
+
+<h2>categories: </h2>
+
+<p> Add &#8220;Fork me on GitHub&#8221; like this:
 I、add some code in ~/octopress/source/_includes/head.html.
 II、add pictures into ~/octopress/source/images/forkme.png.</p>
 
@@ -206,11 +230,21 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[解决git push遇到的问题]]></title>
+    <title type="html"><![CDATA[Solve Git Push Problem]]></title>
     <link href="http://ZuLove.github.com/blog/2013/03/12/solve-git-push-problem/"/>
-    <updated>2013-03-12T00:46:00+08:00</updated>
+    <updated>2013-03-12T00:00:00+08:00</updated>
     <id>http://ZuLove.github.com/blog/2013/03/12/solve-git-push-problem</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<hr />
+
+<p>layout: post
+title: &#8220;解决git push遇到的问题&#8221;
+date: 2013-03-12 00:46
+comments: true</p>
+
+<h2>categories: </h2>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

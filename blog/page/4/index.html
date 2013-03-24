@@ -12,10 +12,23 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见: URL: www.vim.org/runtime.php/&hellip; tips: 1
+  <meta name="description" content="tips: 1
 2
-os:ubuntu 10.04
-shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
+os:ubuntu10.04
+Terminal:zsh 1、全新系统请安装如下依赖： 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+sudo apt-get install build-essential
+sudo apt-get install xorg-dev &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,7 +90,7 @@ shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/08/update-vim-latest/">update_vim_latest</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">Compile_vim73_in_ubuntu10.04</a></h1>
     
     
       <p class="meta">
@@ -93,55 +106,221 @@ shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
   
 
 
-<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
+<time datetime="2013-03-04T16:54:00+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/03/08/update-vim-latest/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
-
-<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
-
-
-<p>tips:</p>
+  <div class="entry-content"><p>tips:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu10</span><span class="mf">.04</span>
+</span><span class='line'><span class="nl">Terminal:</span><span class="n">zsh</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
-下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+<p>1、全新系统请安装如下依赖：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
-</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
-</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
-</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">xorg</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libncurses5</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnome2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnomeui</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgtk2</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libatk1</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libbonoboui2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libcairo2</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libx11</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxpm</span><span class="o">-</span><span class="n">dev</span>
+</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxt</span><span class="o">-</span><span class="n">dev</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>2、Start Vim and type these commands:</p>
+<p>2、下载vim73:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">hg</span> <span class="n">clone</span> <span class="nl">https:</span><span class="c1">//vim.googlecode.com/hg/ vim</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>tips:安装mercurial,否则不能用hg clone</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">mercurial</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或在手工下载vim73:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、解压vim-7.3.tar.bz2:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、编译：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gpm</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">acl</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">x</span><span class="o">=</span><span class="n">yes</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gtk2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">cscope</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">netbeans</span>  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span><span class="o">=</span><span class="n">dynamic</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>5、安装:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>  以下是在我的电脑上编译安装所出现的问题及解决办法：
+问题1、Gtk-WARNING **: Invalid input string</p>
+
+<pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
+              在前面加入下面代码：
+              set langmenu=zh_CN.UTF-8                 "设置菜单语言
+</code></pre>
+
+<p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>
+
+<pre><code>              GLib-GObject-CRITICAL ………………，键入gedit也是出现这样的问题，貌似错误信息比键入gvim时更多，
+              其实此时已经不是gvim的问题了,很可能由于用户装了gnome-globalmenu的面板工具导致的。
+              解决办法：
+              在终端中输入gconf-editor,打开配置编辑器
+              找到/apps/gnome_settings_daemon/gtk-modules/
+</code></pre>
+
+<p>去掉globalmenu-plugin前的勾</p>
+
+<p>问题3、在系统应用程序菜单中没有gvim选项，怎么办？</p>
+
+<pre><code>              解决办法：（记住，用root权限编辑）
+              打开终端，sudo vim /usr/share/applications/gvim.desktop     //没有的话，vim会提示new file
+              将下面的内容输入，
+              [Desktop Entry]  
+              Name=Gvim
+              Comment[zh_CN]=Gvim编辑器
+              Exec=gvim
+              Icon=/usr/share/icons/Macbuntu-Icons/apps/48/vim_logo.png//此处图片可自定义，大小最好为128x128,png格式
+              Terminal=false
+              X-MultipleArgs=false
+              Type=Application
+              Categories=Application;Development;
+              Encoding=UTF-8
+              StartupNotify=true 
+              Name=GVim Text Editor
+              :x保存退出
+              这时，你打开应用程序-编程菜单，便看到了GVim Text Editor
+</code></pre>
+
+<p>问题4：在中端输入gvim出现如下错误时解决办法有二：</p>
+
+<p>gvim vim command line 时发生错误: E117: 未定义的函数: Maximize_Window</p>
+
+<p>  其一：这个是zsh 配置里的第117行。可以直接删除就OK</p>
+
+<p>  其二：在.vimrc中添加如下代码：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
-</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
+</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
+</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
+</span><span class='line'>    <span class="n">endfunction</span>
+</span><span class='line'><span class="n">endif</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 
+</div>
+  
+  
 
-<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/02/28/solve-the-debian-lang/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、进入到下载文件所在目录：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
+</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 
 </div>
   
@@ -167,15 +346,15 @@ shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress使用Disqus留言系统</a>
+        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a>
+        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/12/solve-git-push-problem/">解决git push遇到的问题</a>
+        <a href="/blog/2013/03/12/solve-git-push-problem/">Solve Git Push Problem</a>
       </li>
     
       <li class="post">
