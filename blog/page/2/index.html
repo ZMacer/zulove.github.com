@@ -8,16 +8,14 @@
         <img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;">
     </a>
   <meta charset="utf-8">
-  <title>Linux和windows 下Gvim窗口自动最大化 - ZLoves world</title>
+  <title>ZLoves world</title>
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="tips: 1
+  <meta name="description" content="安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见: URL: www.vim.org/runtime.php/&hellip; tips: 1
 2
-os:Ubuntu 10.04
-shell:zsh 5.0.0 1、安装wmctrl: 1
-sudo apt-get install wmctrl 2、在~/.zshrc中加入： 1
-alias gvim=&#39;gvim -c &quot;call &hellip;">
+os:ubuntu 10.04
+shell:zsh-5.0.0 1、安装Aap(一種用於下载原始码， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +24,7 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ZuLove.github.com/blog/2013/03/05/windows-max/">
+  <link rel="canonical" href="http://ZuLove.github.com/blog/page/2/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,12 +69,172 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article class="hentry" role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
     
-      <h1 class="entry-title">Linux和windows 下Gvim窗口自动最大化</h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/08/update-vim-latest/">Update_vim_latest</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/08/update-vim-latest/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
+
+
+<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/07/vim-plugin-clang-complete/">Vim_Plugin_clang_complete</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/07/vim-plugin-clang-complete/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装clang:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、下载clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装clang_complete:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、配置.vimrc:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/05/windows-max/">Linux和windows 下Gvim窗口自动最大化</a></h1>
     
     
       <p class="meta">
@@ -94,14 +252,14 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
 
 <time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
         
-         | <a href="#disqus_thread">Comments</a>
+         | <a href="/blog/2013/03/05/windows-max/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>tips:</p>
+  <div class="entry-content"><p>tips:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -178,63 +336,22 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
 
 
 </div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">ZLove</span></span>
-
-      
-
-
-
-
-
-
-
-
   
 
 
-<time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
-      
-
-
-    </p>
+    </article>
+  
+  <div class="pagination">
     
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ZuLove.github.com/blog/2013/03/05/windows-max/" data-via="" data-counturl="http://ZuLove.github.com/blog/2013/03/05/windows-max/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-</div>
-
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
     
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/" title="Previous Post: Compile_vim73_in_ubuntu10.04">&laquo; Compile_vim73_in_ubuntu10.04</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/03/07/vim-plugin-clang-complete/" title="Next Post: Vim_Plugin_clang_complete">Vim_Plugin_clang_complete &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
 </div>
-  </section>
-
-</div>
-
 <aside class="sidebar">
   
     <section>
@@ -267,7 +384,7 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+    <li class="loading">Status updating&#8230;</li>
   </ul>
   
   <a href="https://github.com/ZuLove">@ZuLove</a> on GitHub
@@ -301,7 +418,6 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
   
 </aside>
 
-
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -316,10 +432,7 @@ alias gvim=&#39;gvim -c &quot;call &hellip;">
       var disqus_shortname = 'zulove';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://ZuLove.github.com/blog/2013/03/05/windows-max/';
-        var disqus_url = 'http://ZuLove.github.com/blog/2013/03/05/windows-max/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

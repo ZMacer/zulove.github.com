@@ -12,10 +12,7 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="Octopress没有默认的留言系统，不过，可以使用Disqus。
-开启也Disqus留言系统也很简单，
-开启也Disqus留言系统也很简单，
-首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。 &hellip;">
+  <meta name="description" content="">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,7 +74,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress使用Disqus留言系统</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a></h1>
     
     
       <p class="meta">
@@ -93,7 +90,7 @@
   
 
 
-<time datetime="2013-03-23T23:45:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-23T00:00:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
         
          | <a href="/blog/2013/03/23/octopress-use-disqus/#disqus_thread">Comments</a>
         
@@ -102,25 +99,12 @@
   </header>
 
 
-  <div class="entry-content"><p>Octopress没有默认的留言系统，不过，可以使用Disqus。
-开启也Disqus留言系统也很简单，
-开启也Disqus留言系统也很简单，
-首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。如果你开启，相关文章的广告功能， 甚至可以通过点击量赚钱。
-其次，在_config.yml文件中开启Disqus留言系统
-如下：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp"># Disqus Comments</span>
-</span><span class='line'><span class="nl">disqus_short_name:</span> <span class="n">zulove</span>
-</span><span class='line'><span class="nl">disqus_show_comment_count:</span> <span class="n">true</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
+  <div class="entry-content"></div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/23/octopress-use-disqus/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -147,7 +131,7 @@
   
 
 
-<time datetime="2013-03-23T22:49:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-23T00:00:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
         
          | <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/#disqus_thread">Comments</a>
         
@@ -156,167 +140,12 @@
   </header>
 
 
-  <div class="entry-content"><p> Add &#8220;Fork me on GitHub&#8221; like this:
-I、add some code in ~/octopress/source/_includes/head.html.
-II、add pictures into ~/octopress/source/images/forkme.png.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;https://github.com/ZuLove/zulove.github.com&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s">&quot;Fork me on GitHub&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;/images/forkme.png&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;position:absolute; top: 0px; right: 0;&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>First.change the background colors by adding the following lines to ~/octopress/sass/custom/_colors.scss</p>
-
-<figure class='code'><figcaption><span> (_colors.scss)</span> <a href='/downloads/code/_colors.scss'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="c1">// Here you can easily change your sites&#39;s color scheme.</span>
-</span><span class='line'><span class="c1">// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.</span>
-</span><span class='line'><span class="c1">// If you need a handy color picker try http://hslpicker.com</span>
-</span><span class='line'><span class="na">$page-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
-</span><span class='line'><span class="c1">//$main-bg:#8fc17a;</span>
-</span><span class='line'><span class="na">$header-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
-</span><span class='line'><span class="c1">//$subtitle-color: lighten($header-bg, 58);</span>
-</span><span class='line'><span class="na">$nav-bg</span><span class="o">:</span> <span class="nf">desaturate</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="mh">#8fc17a</span><span class="o">,</span> <span class="mi">18</span><span class="p">)</span><span class="o">,</span> <span class="mi">5</span><span class="p">);</span>
-</span><span class='line'><span class="na">$nav-bg-front</span><span class="o">:</span> <span class="nf">image-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">noise.png&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="na">$nav-bg-back</span><span class="o">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="nv">$nav-bg</span><span class="o">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">,</span> <span class="nv">$nav-bg</span><span class="o">,</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$nav-bg</span><span class="o">,</span> <span class="mi">11</span><span class="p">));</span>
-</span><span class='line'><span class="na">$sidebar-bg</span><span class="o">:</span> <span class="nf">desaturate</span><span class="p">(</span><span class="mh">#8fc17a</span><span class="o">,</span> <span class="mi">8</span><span class="p">);</span>
-</span><span class='line'><span class="c1">//$sidebar-bg: desaturate(#eceff5, 8);</span>
-</span><span class='line'><span class="na">$sidebar-link-color</span><span class="o">:</span> <span class="nf">saturate</span><span class="p">(</span><span class="mh">#526f9a</span><span class="o">,</span> <span class="mi">10</span><span class="p">);</span>
-</span><span class='line'><span class="na">$sidebar-link-color-hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="mh">#7ab662</span><span class="o">,</span> <span class="mi">9</span><span class="p">);</span>
-</span><span class='line'><span class="na">$footer-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
-</span><span class='line'><span class="c1">//$footer-bg: #ccc !default;</span>
-</span><span class='line'><span class="na">$footer-bg-front</span><span class="o">:</span> <span class="nf">image-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">noise.png&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="na">$footer-bg-back</span><span class="o">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="nv">$footer-bg</span><span class="o">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">,</span> <span class="nv">$footer-bg</span><span class="o">,</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$footer-bg</span><span class="o">,</span> <span class="mi">11</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/* To use the light Solarized highlighting theme uncomment the following line */</span>
-</span><span class='line'><span class="c1">//$solarized: light;</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/* If you want to tweak the Solarized colors you can do that here */</span>
-</span><span class='line'><span class="c1">//$base03:          #002b36; //darkest blue</span>
-</span><span class='line'><span class="c1">//$base02:          #073642; //dark blue</span>
-</span><span class='line'><span class="c1">//$base01:          #586e75; //darkest gray</span>
-</span><span class='line'><span class="c1">//$base00:          #657b83; //dark gray</span>
-</span><span class='line'><span class="c1">//$base0:           #839496; //medium gray</span>
-</span><span class='line'><span class="c1">//$base1:           #93a1a1; //medium light gray</span>
-</span><span class='line'><span class="c1">//$base2:           #eee8d5; //cream</span>
-</span><span class='line'><span class="c1">//$base3:           #fdf6e3; //white</span>
-</span><span class='line'><span class="c1">//$solar-yellow:    #b58900;</span>
-</span><span class='line'><span class="c1">//$solar-orange:    #cb4b16;</span>
-</span><span class='line'><span class="c1">//$solar-red:       #dc322f;</span>
-</span><span class='line'><span class="c1">//$solar-magenta:   #d33682;</span>
-</span><span class='line'><span class="c1">//$solar-violet:    #6c71c4;</span>
-</span><span class='line'><span class="c1">//$solar-blue:      #268bd2;</span>
-</span><span class='line'><span class="c1">//$solar-cyan:      #2aa198;</span>
-</span><span class='line'><span class="c1">//$solar-green:     #859900;</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/* Non highlighted code colors */</span>
-</span><span class='line'><span class="c1">//$pre-bg: $base03;</span>
-</span><span class='line'><span class="c1">//$pre-border: darken($base02, 5);</span>
-</span><span class='line'><span class="c1">//$pre-color: $base1;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Second,change header fonts
-(1)、add the font-family CSS to ~/octopress/sass/custom/_fonts.scss thusly:</p>
-
-<figure class='code'><figcaption><span> (_fonts.scss)</span> <a href='/downloads/code/_fonts.scss'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="c1">// Here you can easily change font faces which are used in your site.</span>
-</span><span class='line'><span class="c1">// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works. your sites&#39;s.</span>
-</span><span class='line'><span class="c1">// If you love to use Web Fonts, you also need to add some lines to source/_includes/custom/head.html</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//$sans: &quot;Optima&quot;, sans-serif;</span>
-</span><span class='line'><span class="c1">//$serif: &quot;Baskerville&quot;, serif;</span>
-</span><span class='line'><span class="c1">//$mono: &quot;Courier&quot;, monospace;</span>
-</span><span class='line'><span class="c1">//$heading-font-family: &quot;Verdana&quot;, sans-serif;</span>
-</span><span class='line'><span class="c1">//$header-title-font-family: &quot;Futura&quot;, sans-serif;</span>
-</span><span class='line'><span class="c1">//$header-subtitle-font-family: &quot;Futura&quot;, sans-serif;</span>
-</span><span class='line'><span class="na">$header-title-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
-</span><span class='line'><span class="na">$header-subtitle-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
-</span><span class='line'><span class="na">$heading-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(2)、edit ~/octopress/source/_includes/custom/head.html like this:</p>
-
-<figure class='code'><figcaption><span> (head.html)</span> <a href='/downloads/code/head.html'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Arvo&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
+  <div class="entry-content"></div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -327,7 +156,7 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/12/solve-git-push-problem/">解决git Push遇到的问题</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/12/solve-git-push-problem/">Solve Git Push Problem</a></h1>
     
     
       <p class="meta">
@@ -343,7 +172,7 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
   
 
 
-<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time>
+<time datetime="2013-03-12T00:00:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time>
         
          | <a href="/blog/2013/03/12/solve-git-push-problem/#disqus_thread">Comments</a>
         
@@ -352,790 +181,20 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
   </header>
 
 
-  <div class="entry-content">
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>使用git push origin master时出现如下错误时</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
-</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
-</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
-</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
-</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
-</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决办法有二：
-其一：
-打开.git/config设置如下：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
-</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>上面配置说明：
-1，当你处于master branch, 默认的remote就是origin。
-2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
-其二：
-使用如下两句也可解决问题：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
-</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>最后：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
-</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>一切OK。</p>
-</div>
+  <div class="entry-content"></div>
   
   
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/08/update-vim-latest/">Update_vim_latest</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/08/update-vim-latest/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
-
-<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
-
-
-<p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
-下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
-</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
-</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
-</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、Start Vim and type these commands:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
-</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/07/vim-plugin-clang-complete/">Vim_Plugin_clang_complete</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/07/vim-plugin-clang-complete/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、安装clang:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、下载clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、配置.vimrc:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/05/windows-max/">Linux和windows 下Gvim窗口自动最大化</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/05/windows-max/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">Ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span> <span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、安装wmctrl:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">wmctrl</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、在~/.zshrc中加入：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">alias</span> <span class="n">gvim</span><span class="o">=</span><span class="err">&#39;</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span><span class="err">&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、在~/.vimrc中加入：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
-</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
-</span><span class='line'>    <span class="n">endfunction</span>
-</span><span class='line'><span class="n">endif</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、将开始菜单中的Gvim快捷方式修改成如下：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">I</span><span class="err">：</span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">applications</span><span class="o">/</span><span class="n">gvim</span><span class="p">.</span><span class="n">desktop</span>
-</span><span class='line'><span class="n">II</span><span class="err">：</span>
-</span><span class='line'><span class="p">[</span><span class="n">Desktop</span> <span class="n">Entry</span><span class="p">]</span>
-</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">Gvim</span>
-</span><span class='line'><span class="n">Comment</span><span class="p">[</span><span class="n">zh_CN</span><span class="p">]</span><span class="o">=</span><span class="n">Gvim</span><span class="err">编辑器</span>
-</span><span class='line'><span class="n">Exec</span><span class="o">=</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span>
-</span><span class='line'><span class="n">Icon</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icons</span><span class="o">/</span><span class="n">Macbuntu</span><span class="o">-</span><span class="n">Icons</span><span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="mi">48</span><span class="o">/</span><span class="n">vim_logo</span><span class="p">.</span><span class="n">png</span>
-</span><span class='line'><span class="n">Terminal</span><span class="o">=</span><span class="n">false</span>
-</span><span class='line'><span class="n">X</span><span class="o">-</span><span class="n">MultipleArgs</span><span class="o">=</span><span class="n">false</span>
-</span><span class='line'><span class="n">Type</span><span class="o">=</span><span class="n">Application</span>
-</span><span class='line'><span class="n">Categories</span><span class="o">=</span><span class="n">Application</span><span class="p">;</span><span class="n">Development</span><span class="p">;</span>
-</span><span class='line'><span class="n">Encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
-</span><span class='line'><span class="n">StartupNotify</span><span class="o">=</span><span class="n">true</span>
-</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">GVim</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">Compile_vim73_in_ubuntu10.04</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-04T16:54:00+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu10</span><span class="mf">.04</span>
-</span><span class='line'><span class="nl">Terminal:</span><span class="n">zsh</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、全新系统请安装如下依赖：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">xorg</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libncurses5</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnome2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnomeui</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgtk2</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libatk1</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libbonoboui2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libcairo2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libx11</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxpm</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxt</span><span class="o">-</span><span class="n">dev</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、下载vim73:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">hg</span> <span class="n">clone</span> <span class="nl">https:</span><span class="c1">//vim.googlecode.com/hg/ vim</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>tips:安装mercurial,否则不能用hg clone</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">mercurial</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或在手工下载vim73:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、解压vim-7.3.tar.bz2:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、编译：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gpm</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">acl</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">x</span><span class="o">=</span><span class="n">yes</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gtk2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">cscope</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">netbeans</span>  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span><span class="o">=</span><span class="n">dynamic</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>5、安装:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>  以下是在我的电脑上编译安装所出现的问题及解决办法：
-问题1、Gtk-WARNING **: Invalid input string</p>
-
-<pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
-              在前面加入下面代码：
-              set langmenu=zh_CN.UTF-8                 "设置菜单语言
-</code></pre>
-
-<p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>
-
-<pre><code>              GLib-GObject-CRITICAL ………………，键入gedit也是出现这样的问题，貌似错误信息比键入gvim时更多，
-              其实此时已经不是gvim的问题了,很可能由于用户装了gnome-globalmenu的面板工具导致的。
-              解决办法：
-              在终端中输入gconf-editor,打开配置编辑器
-              找到/apps/gnome_settings_daemon/gtk-modules/
-</code></pre>
-
-<p>去掉globalmenu-plugin前的勾</p>
-
-<p>问题3、在系统应用程序菜单中没有gvim选项，怎么办？</p>
-
-<pre><code>              解决办法：（记住，用root权限编辑）
-              打开终端，sudo vim /usr/share/applications/gvim.desktop     //没有的话，vim会提示new file
-              将下面的内容输入，
-              [Desktop Entry]  
-              Name=Gvim
-              Comment[zh_CN]=Gvim编辑器
-              Exec=gvim
-              Icon=/usr/share/icons/Macbuntu-Icons/apps/48/vim_logo.png//此处图片可自定义，大小最好为128x128,png格式
-              Terminal=false
-              X-MultipleArgs=false
-              Type=Application
-              Categories=Application;Development;
-              Encoding=UTF-8
-              StartupNotify=true 
-              Name=GVim Text Editor
-              :x保存退出
-              这时，你打开应用程序-编程菜单，便看到了GVim Text Editor
-</code></pre>
-
-<p>问题4：在中端输入gvim出现如下错误时解决办法有二：</p>
-
-<p>gvim vim command line 时发生错误: E117: 未定义的函数: Maximize_Window</p>
-
-<p>  其一：这个是zsh 配置里的第117行。可以直接删除就OK</p>
-
-<p>  其二：在.vimrc中添加如下代码：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
-</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
-</span><span class='line'>    <span class="n">endfunction</span>
-</span><span class='line'><span class="n">endif</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/28/solve-the-debian-lang/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、进入到下载文件所在目录：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
-</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/28/otcopress-blogs/">Otcopress-blogs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/28/otcopress-blogs/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu10</span><span class="mf">.04</span>
-</span><span class='line'><span class="nl">Terminal:</span><span class="n">zsh</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、安装curl:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">curl</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>before install ruby you should install libyaml-dev，openssl:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libyaml</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">openssls</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>安装RVM:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">curl</span> <span class="o">-</span><span class="n">L</span> <span class="nl">https:</span><span class="c1">//get.rvm.io | zsh -s stable --ruby</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>start RVM :</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">source</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">zlove</span><span class="o">/</span><span class="p">.</span><span class="n">rvm</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">rvm</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>安装ruby:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">install</span> <span class="n">ruby</span> <span class="mf">1.9.3</span><span class="o">:</span>
-</span><span class='line'><span class="n">rvm</span> <span class="n">install</span> <span class="mf">1.9.3</span>
-</span><span class='line'><span class="n">rvm</span> <span class="n">use</span> <span class="mf">1.9.3</span>
-</span><span class='line'><span class="n">rvm</span> <span class="n">rubygems</span> <span class="n">latest</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、install octopress:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">clone</span> <span class="nl">git:</span><span class="c1">//github.com/imathis/octopress.git octopress</span>
-</span><span class='line'><span class="n">cd</span> <span class="n">octopress</span>    <span class="err">#</span> <span class="n">If</span> <span class="n">you</span> <span class="n">use</span> <span class="n">RVM</span><span class="p">,</span> <span class="n">You</span><span class="err">&#39;</span><span class="n">ll</span> <span class="n">be</span> <span class="n">asked</span> <span class="k">if</span> <span class="n">you</span> <span class="n">trust</span> <span class="n">the</span> <span class="p">.</span><span class="n">rvmrc</span> <span class="n">file</span> <span class="p">(</span><span class="n">say</span> <span class="n">yes</span><span class="p">).</span>
-</span><span class='line'><span class="n">ruby</span> <span class="o">--</span><span class="n">version</span>  <span class="err">#</span> <span class="n">Should</span> <span class="n">report</span> <span class="n">Ruby</span> <span class="mf">1.9.3</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>install dependencies:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span>
-</span><span class='line'><span class="n">bundle</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>install the default octopress theme:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>create a github repository:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">https:</span><span class="c1">//github.com/repositories/new</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、设定Github pages:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">setup_github_pages</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>tips:if this steps have errors:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s">&quot;249056903@qq.com&quot;</span>
-</span><span class='line'><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&quot;ZuLove&quot;</span><span class="c1">//github用户名</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>5、发布
-预览</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">preview</span>
-</span><span class='line'><span class="nl">http:</span><span class="c1">//localhost:4000/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>发布</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">generate</span>
-</span><span class='line'><span class="n">rake</span> <span class="n">deploy</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>6、将source 加入git:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
-</span><span class='line'><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="err">&#39;</span><span class="n">initial</span> <span class="n">source</span> <span class="n">commit</span><span class="err">&#39;</span>
-</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">source</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>7、更新 Octopress
-日后有 Octopress 新版本发布，使用以下指令升级。</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span> <span class="n">octopress</span> <span class="n">master</span>     <span class="err">#</span> <span class="n">Get</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">Octopress</span>
-</span><span class='line'><span class="n">bundle</span> <span class="n">install</span>                      <span class="err">#</span> <span class="n">Keep</span> <span class="n">gems</span> <span class="n">updated</span>
-</span><span class='line'><span class="n">rake</span> <span class="n">update_source</span>            <span class="err">#</span> <span class="n">update</span> <span class="n">the</span> <span class="n">template</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">source</span>
-</span><span class='line'><span class="n">rake</span> <span class="n">update_style</span>               <span class="err">#</span> <span class="n">update</span> <span class="n">the</span> <span class="n">template</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">style</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>8.发表新文章</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">new_post</span><span class="err">\</span><span class="p">[</span><span class="s">&quot;Octopress blogs&quot;</span><span class="err">\</span><span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>会在“source/_posts”目录下自动生成“2012-11-14-otcopress-blogs.markdown”，编辑后即可发布：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">rake</span> <span class="n">preview</span>
-</span><span class='line'><span class="n">rake</span> <span class="n">gen_deploy</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/12/solve-git-push-problem/">Read on &rarr;</a>
+    </footer>
   
 
 
     </article>
   
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -1148,15 +207,15 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress使用Disqus留言系统</a>
+        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a>
+        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/12/solve-git-push-problem/">解决git push遇到的问题</a>
+        <a href="/blog/2013/03/12/solve-git-push-problem/">Solve Git Push Problem</a>
       </li>
     
       <li class="post">
