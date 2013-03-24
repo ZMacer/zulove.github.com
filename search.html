@@ -3,12 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>解决Debian四格问题（乱码） - ZLoves world</title>
+	<title>ZLoves world</title>
     <meta name="author" content="ZLove">
     
-	<meta name="description" content="1、用自带的firefox下载ttf-wqy-zenhei: 1
-http://mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb 2、进入到下载文件所在目录： 1
-cd &hellip;">
+	<meta name="description" content="Search Results $('#search_results').tapir({ 'token': '', 'complete' : function() { document.getElementById('search_loading').style.display="none &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -85,60 +83,22 @@ cd &hellip;">
 <div id="toload">
 <!-- begin toload --> 
     <div id="content" class="inner">
-        <article class="post">
-	<h2 class="title">解决Debian四格问题（乱码）</h2>
-	<div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、进入到下载文件所在目录：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
-</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+        <h1 class="entry-title"><center>Search Results</center></h1>
+<div id="search_loading" style="margin: 40px 0">
+    <center><img src="/images/loading.gif"></center>
 </div>
 
-<div class="meta">
-	
-		<span class="comments"><a href="/blog/2013/02/28/solve-the-debian-lang/#disqus_thread">Comments</a></span>
-	
+<script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
+<div id="search_results" style="display:none">
+<br>
 </div>
-</article>
+<script>
+         $('#search_results').tapir({
+             'token': '',
+             'complete' : function() { document.getElementById('search_loading').style.display="none"; }
+         });
+</script>
 
-	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-	
-	
-	
-	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-	
-	<a class="addthis_counter addthis_pill_style"></a>
-	</div>
-  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
-</div>
-
-
-
-<section id="comment">
-    <h2 class="title">Comments</h2>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-</section>
 
     </div>
     <footer id="footer">
@@ -165,10 +125,7 @@ cd &hellip;">
       var disqus_shortname = 'zulove';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://ZuLove.github.com/blog/2013/02/28/solve-the-debian-lang/';
-        var disqus_url = 'http://ZuLove.github.com/blog/2013/02/28/solve-the-debian-lang/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
