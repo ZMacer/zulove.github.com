@@ -12,10 +12,9 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="Octopress没有默认的留言系统，不过，可以使用Disqus。
-开启也Disqus留言系统也很简单，
-开启也Disqus留言系统也很简单，
-首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。 &hellip;">
+  <meta name="description" content="1、用自带的firefox下载ttf-wqy-zenhei: 1
+http://mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb 2、进入到下载文件所在目录： 1
+cd &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ZuLove.github.com/">
+  <link rel="canonical" href="http://ZuLove.github.com/blog/page/8/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,7 +76,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress使用Disqus留言系统</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/28/solve-the-debian-lang/">解决Debian四格问题（乱码）</a></h1>
     
     
       <p class="meta">
@@ -93,28 +92,35 @@
   
 
 
-<time datetime="2013-03-23T23:45:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
+<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/03/23/octopress-use-disqus/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/02/28/solve-the-debian-lang/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Octopress没有默认的留言系统，不过，可以使用Disqus。
-开启也Disqus留言系统也很简单，
-开启也Disqus留言系统也很简单，
-首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。如果你开启，相关文章的广告功能， 甚至可以通过点击量赚钱。
-其次，在_config.yml文件中开启Disqus留言系统
-如下：</p>
+  <div class="entry-content"><p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、进入到下载文件所在目录：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、安装ttf-wqy-zenhei:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp"># Disqus Comments</span>
-</span><span class='line'><span class="nl">disqus_short_name:</span> <span class="n">zulove</span>
-</span><span class='line'><span class="nl">disqus_show_comment_count:</span> <span class="n">true</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
+</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -128,9 +134,11 @@
   
   <div class="pagination">
     
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+      <a class="prev" href="/blog/page/9/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/7/">Newer &rarr;</a>
     
   </div>
 </div>
