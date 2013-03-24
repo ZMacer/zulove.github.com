@@ -12,7 +12,16 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="">
+  <meta name="description" content="1
+2
+os:ubuntu 10.04
+shell:zsh-5.0.0 使用git push origin master时出现如下错误时 1
+2
+3
+4
+5
+6
+To git@github.com:ZuLove/ZVimrc.git ! [rejected] master -&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,7 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/12/solve-git-push-problem/">解决git Push遇到的问题</a></h1>
     
     
       <p class="meta">
@@ -90,21 +99,157 @@
   
 
 
-<time datetime="2013-03-23T00:00:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time>
+<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/03/23/octopress-use-disqus/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/03/12/solve-git-push-problem/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"></div>
+  <div class="entry-content">
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用git push origin master时出现如下错误时</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
+</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
+</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
+</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
+</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决办法有二：
+其一：
+打开.git/config设置如下：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
+</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
+</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面配置说明：
+1，当你处于master branch, 默认的remote就是origin。
+2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
+其二：
+使用如下两句也可解决问题：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
+</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
+</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>一切OK。</p>
+</div>
   
   
-    <footer>
-      <a rel="full-article" href="/blog/2013/03/23/octopress-use-disqus/">Read on &rarr;</a>
-    </footer>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/08/update-vim-latest/">Update_vim_latest</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/08/update-vim-latest/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
+
+
+<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
+
+</div>
+  
   
 
 
@@ -127,11 +272,11 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a>
+        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
+        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a>
       </li>
     
       <li class="post">
@@ -147,6 +292,33 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ZuLove',
+            count: 0,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 

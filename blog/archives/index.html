@@ -12,8 +12,8 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="Blog Archive 2013 change blogs bg header fonts
-Mar 23 2013 Octopress Use Disqus
+  <meta name="description" content="Blog Archive 2013 Octopress Use Disqus
+Mar 23 2013 Change Blogs Bg Header Fonts
 Mar 23 2013 解决git push遇到的问题
 Mar 12 2013 update_vim_latest
 Mar 08 &hellip;">
@@ -87,8 +87,8 @@ Mar 08 &hellip;">
 
 <article>
   
-<h1><a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a></h1>
-<time datetime="2013-03-23T22:49:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>23</span> <span class='year'>2013</span></time>
+<h1><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a></h1>
+<time datetime="2013-03-23T00:00:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>23</span> <span class='year'>2013</span></time>
 
 
 </article>
@@ -97,7 +97,7 @@ Mar 08 &hellip;">
 
 <article>
   
-<h1><a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a></h1>
+<h1><a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a></h1>
 <time datetime="2013-03-23T00:00:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>23</span> <span class='year'>2013</span></time>
 
 
@@ -187,11 +187,11 @@ Mar 08 &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a>
+        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
+        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a>
       </li>
     
       <li class="post">
@@ -207,6 +207,33 @@ Mar 08 &hellip;">
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ZuLove',
+            count: 0,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
