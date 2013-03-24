@@ -148,6 +148,385 @@
 </div>
 </article>
 
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">
+		
+			Change Blogs Bg Header Fonts</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-23T22:49:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<p> Add &#8220;Fork me on GitHub&#8221; like this:
+I、add some code in ~/octopress/source/_includes/head.html.
+II、add pictures into ~/octopress/source/images/forkme.png.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;https://github.com/ZuLove/zulove.github.com&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s">&quot;Fork me on GitHub&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;/images/forkme.png&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;position:absolute; top: 0px; right: 0;&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>First.change the background colors by adding the following lines to ~/octopress/sass/custom/_colors.scss</p>
+
+<figure class='code'><figcaption><span> (_colors.scss)</span> <a href='/downloads/code/_colors.scss'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="c1">// Here you can easily change your sites&#39;s color scheme.</span>
+</span><span class='line'><span class="c1">// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.</span>
+</span><span class='line'><span class="c1">// If you need a handy color picker try http://hslpicker.com</span>
+</span><span class='line'><span class="na">$page-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
+</span><span class='line'><span class="c1">//$main-bg:#8fc17a;</span>
+</span><span class='line'><span class="na">$header-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
+</span><span class='line'><span class="c1">//$subtitle-color: lighten($header-bg, 58);</span>
+</span><span class='line'><span class="na">$nav-bg</span><span class="o">:</span> <span class="nf">desaturate</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="mh">#8fc17a</span><span class="o">,</span> <span class="mi">18</span><span class="p">)</span><span class="o">,</span> <span class="mi">5</span><span class="p">);</span>
+</span><span class='line'><span class="na">$nav-bg-front</span><span class="o">:</span> <span class="nf">image-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">noise.png&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="na">$nav-bg-back</span><span class="o">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="nv">$nav-bg</span><span class="o">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">,</span> <span class="nv">$nav-bg</span><span class="o">,</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$nav-bg</span><span class="o">,</span> <span class="mi">11</span><span class="p">));</span>
+</span><span class='line'><span class="na">$sidebar-bg</span><span class="o">:</span> <span class="nf">desaturate</span><span class="p">(</span><span class="mh">#8fc17a</span><span class="o">,</span> <span class="mi">8</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//$sidebar-bg: desaturate(#eceff5, 8);</span>
+</span><span class='line'><span class="na">$sidebar-link-color</span><span class="o">:</span> <span class="nf">saturate</span><span class="p">(</span><span class="mh">#526f9a</span><span class="o">,</span> <span class="mi">10</span><span class="p">);</span>
+</span><span class='line'><span class="na">$sidebar-link-color-hover</span><span class="o">:</span> <span class="nf">darken</span><span class="p">(</span><span class="mh">#7ab662</span><span class="o">,</span> <span class="mi">9</span><span class="p">);</span>
+</span><span class='line'><span class="na">$footer-bg</span><span class="o">:</span> <span class="mh">#8fc17a</span><span class="p">;</span>
+</span><span class='line'><span class="c1">//$footer-bg: #ccc !default;</span>
+</span><span class='line'><span class="na">$footer-bg-front</span><span class="o">:</span> <span class="nf">image-url</span><span class="p">(</span><span class="s1">&#39;</span><span class="s2">noise.png&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="na">$footer-bg-back</span><span class="o">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="nf">lighten</span><span class="p">(</span><span class="nv">$footer-bg</span><span class="o">,</span> <span class="mi">8</span><span class="p">)</span><span class="o">,</span> <span class="nv">$footer-bg</span><span class="o">,</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$footer-bg</span><span class="o">,</span> <span class="mi">11</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* To use the light Solarized highlighting theme uncomment the following line */</span>
+</span><span class='line'><span class="c1">//$solarized: light;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* If you want to tweak the Solarized colors you can do that here */</span>
+</span><span class='line'><span class="c1">//$base03:          #002b36; //darkest blue</span>
+</span><span class='line'><span class="c1">//$base02:          #073642; //dark blue</span>
+</span><span class='line'><span class="c1">//$base01:          #586e75; //darkest gray</span>
+</span><span class='line'><span class="c1">//$base00:          #657b83; //dark gray</span>
+</span><span class='line'><span class="c1">//$base0:           #839496; //medium gray</span>
+</span><span class='line'><span class="c1">//$base1:           #93a1a1; //medium light gray</span>
+</span><span class='line'><span class="c1">//$base2:           #eee8d5; //cream</span>
+</span><span class='line'><span class="c1">//$base3:           #fdf6e3; //white</span>
+</span><span class='line'><span class="c1">//$solar-yellow:    #b58900;</span>
+</span><span class='line'><span class="c1">//$solar-orange:    #cb4b16;</span>
+</span><span class='line'><span class="c1">//$solar-red:       #dc322f;</span>
+</span><span class='line'><span class="c1">//$solar-magenta:   #d33682;</span>
+</span><span class='line'><span class="c1">//$solar-violet:    #6c71c4;</span>
+</span><span class='line'><span class="c1">//$solar-blue:      #268bd2;</span>
+</span><span class='line'><span class="c1">//$solar-cyan:      #2aa198;</span>
+</span><span class='line'><span class="c1">//$solar-green:     #859900;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* Non highlighted code colors */</span>
+</span><span class='line'><span class="c1">//$pre-bg: $base03;</span>
+</span><span class='line'><span class="c1">//$pre-border: darken($base02, 5);</span>
+</span><span class='line'><span class="c1">//$pre-color: $base1;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Second,change header fonts
+(1)、add the font-family CSS to ~/octopress/sass/custom/_fonts.scss thusly:</p>
+
+<figure class='code'><figcaption><span> (_fonts.scss)</span> <a href='/downloads/code/_fonts.scss'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="c1">// Here you can easily change font faces which are used in your site.</span>
+</span><span class='line'><span class="c1">// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works. your sites&#39;s.</span>
+</span><span class='line'><span class="c1">// If you love to use Web Fonts, you also need to add some lines to source/_includes/custom/head.html</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//$sans: &quot;Optima&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$serif: &quot;Baskerville&quot;, serif;</span>
+</span><span class='line'><span class="c1">//$mono: &quot;Courier&quot;, monospace;</span>
+</span><span class='line'><span class="c1">//$heading-font-family: &quot;Verdana&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$header-title-font-family: &quot;Futura&quot;, sans-serif;</span>
+</span><span class='line'><span class="c1">//$header-subtitle-font-family: &quot;Futura&quot;, sans-serif;</span>
+</span><span class='line'><span class="na">$header-title-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span><span class='line'><span class="na">$header-subtitle-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span><span class='line'><span class="na">$heading-font-family</span><span class="o">:</span> <span class="s2">&quot;Arvo&quot;</span><span class="o">,</span> <span class="no">serif</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(2)、edit ~/octopress/source/_includes/custom/head.html like this:</p>
+
+<figure class='code'><figcaption><span> (head.html)</span> <a href='/downloads/code/head.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Arvo&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/23/change-blogs-bg-header-fonts//index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/12/solve-git-push-problem/">
+		
+			解决git Push遇到的问题</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用git push origin master时出现如下错误时</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
+</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
+</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
+</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
+</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决办法有二：
+其一：
+打开.git/config设置如下：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
+</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
+</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面配置说明：
+1，当你处于master branch, 默认的remote就是origin。
+2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
+其二：
+使用如下两句也可解决问题：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
+</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
+</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>一切OK。</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/12/solve-git-push-problem//index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/08/update-vim-latest/">
+		
+			Update_vim_latest</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
+
+
+<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/08/update-vim-latest//index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
+
 <nav id="pagenavi">
     
     
