@@ -12,12 +12,16 @@
   <meta name="author" content="ZLove">
 
   
-  <meta name="description" content="tips: 1
+  <meta name="description" content="1
 2
 os:ubuntu 10.04
-shell:zsh-5.0.0 1、安装clang: 1
-sudo apt-get install clang 2、下载clang_complete: 1
-http://www.vim.org/scripts/script.php? &hellip;">
+shell:zsh-5.0.0 使用git push origin master时出现如下错误时 1
+2
+3
+4
+5
+6
+To git@github.com:ZuLove/ZVimrc.git ! [rejected] master -&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,7 +83,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/03/07/vim-plugin-clang-complete/">Vim_Plugin_clang_complete</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/03/12/solve-git-push-problem/">解决git Push遇到的问题</a></h1>
     
     
       <p class="meta">
@@ -95,16 +99,16 @@ http://www.vim.org/scripts/script.php? &hellip;">
   
 
 
-<time datetime="2013-03-07T23:25:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2013</time>
+<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/03/07/vim-plugin-clang-complete/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/03/12/solve-git-push-problem/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>tips:</p>
+  <div class="entry-content">
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -113,100 +117,7 @@ http://www.vim.org/scripts/script.php? &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>1、安装clang:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">clang</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、下载clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//www.vim.org/scripts/script.php?script_id=3302</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装clang_complete:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">vim</span> <span class="n">clang_complete</span><span class="p">.</span><span class="n">vmb</span> <span class="o">-</span><span class="n">c</span> <span class="err">&#39;</span><span class="n">so</span> <span class="o">%</span><span class="err">&#39;</span> <span class="o">-</span><span class="n">c</span> <span class="sc">&#39;q&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、配置.vimrc:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_auto_select</span> <span class="o">=</span> <span class="mi">1</span>       <span class="s">&quot;自动选择第一个但不选定</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_complete_use_library</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span class='line'><span class="n">let</span> <span class="nl">g:</span><span class="n">clang_close_preview</span> <span class="o">=</span> <span class="mi">1</span>     <span class="s">&quot;选择完毕后自动关闭预览窗口</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/05/windows-max/">Linux和windows 下Gvim窗口自动最大化</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/05/windows-max/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">Ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span> <span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、安装wmctrl:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">wmctrl</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、在~/.zshrc中加入：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">alias</span> <span class="n">gvim</span><span class="o">=</span><span class="err">&#39;</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span><span class="err">&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、在~/.vimrc中加入：</p>
+<p>使用git push origin master时出现如下错误时</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -214,51 +125,51 @@ http://www.vim.org/scripts/script.php? &hellip;">
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
-</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
-</span><span class='line'>    <span class="n">endfunction</span>
-</span><span class='line'><span class="n">endif</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
+</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
+</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
+</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
+</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>4、将开始菜单中的Gvim快捷方式修改成如下：</p>
+<p>解决办法有二：
+其一：
+打开.git/config设置如下：</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">I</span><span class="err">：</span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">applications</span><span class="o">/</span><span class="n">gvim</span><span class="p">.</span><span class="n">desktop</span>
-</span><span class='line'><span class="n">II</span><span class="err">：</span>
-</span><span class='line'><span class="p">[</span><span class="n">Desktop</span> <span class="n">Entry</span><span class="p">]</span>
-</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">Gvim</span>
-</span><span class='line'><span class="n">Comment</span><span class="p">[</span><span class="n">zh_CN</span><span class="p">]</span><span class="o">=</span><span class="n">Gvim</span><span class="err">编辑器</span>
-</span><span class='line'><span class="n">Exec</span><span class="o">=</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span>
-</span><span class='line'><span class="n">Icon</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icons</span><span class="o">/</span><span class="n">Macbuntu</span><span class="o">-</span><span class="n">Icons</span><span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="mi">48</span><span class="o">/</span><span class="n">vim_logo</span><span class="p">.</span><span class="n">png</span>
-</span><span class='line'><span class="n">Terminal</span><span class="o">=</span><span class="n">false</span>
-</span><span class='line'><span class="n">X</span><span class="o">-</span><span class="n">MultipleArgs</span><span class="o">=</span><span class="n">false</span>
-</span><span class='line'><span class="n">Type</span><span class="o">=</span><span class="n">Application</span>
-</span><span class='line'><span class="n">Categories</span><span class="o">=</span><span class="n">Application</span><span class="p">;</span><span class="n">Development</span><span class="p">;</span>
-</span><span class='line'><span class="n">Encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
-</span><span class='line'><span class="n">StartupNotify</span><span class="o">=</span><span class="n">true</span>
-</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">GVim</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
+</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
+</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>上面配置说明：
+1，当你处于master branch, 默认的remote就是origin。
+2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
+其二：
+使用如下两句也可解决问题：</p>
 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
+</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
+</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>一切OK。</p>
 </div>
   
   
@@ -283,15 +194,15 @@ http://www.vim.org/scripts/script.php? &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress Use Disqus</a>
+        <a href="/blog/2013/03/23/octopress-use-disqus/">Octopress使用Disqus留言系统</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">Change Blogs Bg Header Fonts</a>
+        <a href="/blog/2013/03/23/change-blogs-bg-header-fonts/">change blogs bg header fonts</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/12/solve-git-push-problem/">Solve Git Push Problem</a>
+        <a href="/blog/2013/03/12/solve-git-push-problem/">解决git push遇到的问题</a>
       </li>
     
       <li class="post">
