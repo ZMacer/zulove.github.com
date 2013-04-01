@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-03-25T01:05:00+08:00</updated>
+  <updated>2013-04-02T00:22:26+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLoves world]]></name>
@@ -12,6 +12,237 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[archlinux安装xfce]]></title>
+    <link href="http://ZuLove.github.com/blog/2013/04/01/archlinux-xface-cn/"/>
+    <updated>2013-04-01T22:19:00+08:00</updated>
+    <id>http://ZuLove.github.com/blog/2013/04/01/archlinux-xface-cn</id>
+    <content type="html"><![CDATA[<h2>1、安装xfce:</h2>
+
+<p>   a)、安装xorg:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">xorg</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   b)、安装图形驱动:</p>
+
+<pre><code> 查看本机显卡：
+</code></pre>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">$</span> <span class="n">lspci</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">VGA</span>
+</span><span class='line'>   <span class="n">nVidia</span> <span class="n">Corporation</span> <span class="n">GT216</span> <span class="p">[</span><span class="n">GeForce</span> <span class="n">GT</span> <span class="mi">240</span><span class="n">M</span><span class="p">]</span> <span class="p">(</span><span class="n">rev</span> <span class="n">a2</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   安装对应驱动：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>  <span class="err">#</span><span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">xf86</span><span class="o">-</span><span class="n">video</span><span class="o">-</span><span class="n">nouveau</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   c)、安装xfce桌面系统</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>   <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">xfce4</span>
+</span><span class='line'>   <span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">skel</span><span class="o">/</span><span class="n">xinitrc</span> <span class="o">~/</span><span class="p">.</span><span class="n">xinitrc</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   在.xinitrc后面添加:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>   <span class="n">exec</span> <span class="n">startxfce4</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   可以在终端手动启动：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>   <span class="n">$startx</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   d)、安装登录管理器：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="err">#</span> <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">slim</span>
+</span><span class='line'>     <span class="err">#</span> <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">slim</span><span class="o">-</span><span class="n">themes</span> <span class="n">archlinux</span><span class="o">-</span><span class="n">themes</span><span class="o">-</span><span class="n">slim</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   软件包 archlinux-themes-slim 包含了多个不同主题。可以在 /usr/share/slim/t   hemes 中查看。在to see the themes available. Enter the theme name on the    current_theme line in /etc/slim.conf:
+   编辑/etc/slim.conf中的current_theme那行，将&#8221;default&#8221;改为你想要的主题名：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="err">#</span><span class="n">current_theme</span>       <span class="k">default</span>
+</span><span class='line'>     <span class="n">current_theme</span>       <span class="n">archlinux</span><span class="o">-</span><span class="n">simplyblack</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   要预览一个主题，可以运行</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="n">$</span> <span class="n">slim</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">slim</span><span class="o">/</span><span class="n">themes</span><span class="o">/&lt;</span><span class="n">theme</span> <span class="n">name</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>要退出，只需在登录行输入 "exit" 并回车。
+用system方式使开机自动进入xfce4:
+</code></pre>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="err">#</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">slim</span><span class="p">.</span><span class="n">service</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>2、xfce4 locale本地化：</h2>
+
+<p>   a)、 开启所需locales:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">$</span> <span class="n">locale</span> <span class="o">-</span><span class="n">a</span>   <span class="c1">//查看当前locale</span>
+</span><span class='line'>     <span class="n">$vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">locale</span><span class="p">.</span><span class="n">gen</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>删除需要的locale前面的#并保存
+</code></pre>
+
+<p>   me:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">en_US</span><span class="p">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span><span class='line'>     <span class="n">en_US</span> <span class="n">ISO</span><span class="o">-</span><span class="mi">8859</span><span class="o">-</span><span class="mi">1</span>
+</span><span class='line'>     <span class="n">zh_CN</span><span class="p">.</span><span class="n">GB18030</span> <span class="n">GB18030</span>
+</span><span class='line'>     <span class="n">zh_CN</span><span class="p">.</span><span class="n">GBK</span> <span class="n">GBK</span>
+</span><span class='line'>     <span class="n">zh_CN</span><span class="p">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span><span class='line'>     <span class="n">zh_CN</span> <span class="n">GB2312</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   b)、运行</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="err">#</span> <span class="n">locale</span><span class="o">-</span><span class="n">gen</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   c)、在.zshrc配置文件中添加：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">export</span> <span class="n">LANG</span><span class="o">=</span><span class="n">zh_CN</span><span class="p">.</span><span class="n">utf8</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   d)、配置locale.conf</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>      <span class="n">touch</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">locale</span><span class="p">.</span><span class="n">conf</span>
+</span><span class='line'>      <span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">locale</span><span class="p">.</span><span class="n">conf</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code> 在locale.conf中添加：
+</code></pre>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="n">localectl</span> <span class="n">set</span><span class="o">-</span><span class="n">locale</span> <span class="n">LANG</span><span class="o">=</span><span class="n">zh_CN</span><span class="p">.</span><span class="n">utf8</span>
+</span><span class='line'>    <span class="n">LANG</span><span class="o">=</span><span class="n">zh_CN</span><span class="p">.</span><span class="n">utf8</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>保存然后reboot;
+</code></pre>
+
+<h2>3、安装yaourt:</h2>
+
+<p>   a)、添加源至/etc/pacman.conf:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="p">[</span><span class="n">archlinuxcn</span><span class="p">]</span>
+</span><span class='line'>    <span class="err">#</span><span class="n">The</span> <span class="n">Chinese</span> <span class="n">Arch</span> <span class="n">Linux</span> <span class="n">communities</span> <span class="n">packages</span><span class="p">.</span>
+</span><span class='line'>    <span class="n">Server</span> <span class="o">=</span> <span class="nl">http:</span><span class="c1">//repo.archlinuxcn.org/$arch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   b)、同步并安装yaourt:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="n">pacmac</span> <span class="o">-</span><span class="n">Syu</span> <span class="n">yaourt</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>4、安装fonts:</h2>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>  <span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">wqy</span><span class="o">-</span><span class="n">microhei</span> <span class="n">wqy</span><span class="o">-</span><span class="n">zenhei</span> <span class="n">ttf</span><span class="o">-</span><span class="n">arphic</span><span class="o">-</span><span class="n">ukai</span> <span class="n">ttf</span><span class="o">-</span><span class="n">arphic</span><span class="o">-</span><span class="n">uming</span> <span class="n">opendesktop</span><span class="o">-</span><span class="n">fonts</span> <span class="n">wqy</span><span class="o">-</span><span class="n">bitmapfont</span> <span class="n">ttf</span><span class="o">-</span><span class="n">hannom</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>查看苹果字体：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">yaourt</span> <span class="o">-</span><span class="n">Ss</span> <span class="n">ttf</span><span class="o">-</span><span class="n">mac</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装苹果字体：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">yaourt</span> <span class="o">-</span><span class="n">S</span> <span class="n">aur</span><span class="o">/</span><span class="n">ttf</span><span class="o">-</span><span class="n">mac</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://wiki.archlinux.org/index.php/Fonts_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+">https://wiki.archlinux.org/index.php/Fonts_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+</a></p>
+
+<h2>5、安装google-chrome:</h2>
+
+<pre><code>查看chrome版本：
+</code></pre>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">yaourt</span> <span class="o">-</span><span class="n">Ss</span> <span class="n">chrome</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装选定版本：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">yaourt</span> <span class="o">-</span><span class="n">Ss</span> <span class="n">aur</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">chrome</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>6、安装Emacs:</h2>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">pacman</span> <span class="o">-</span><span class="n">S</span> <span class="n">emacs</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress使用Disqus留言系统]]></title>

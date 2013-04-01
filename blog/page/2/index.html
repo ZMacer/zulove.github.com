@@ -6,12 +6,9 @@
 	<title>ZLoves world</title>
     <meta name="author" content="ZLoves world">
     
-	<meta name="description" content="Published on: Mar 7th, 2013 Tags: tips: 1
+	<meta name="description" content="Published on: Mar 8th, 2013 Tags: 安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见: URL: www.vim.org/runtime.php/&hellip; tips: 1
 2
-os:ubuntu 10.04
-shell:zsh-5.0.0 1、安装clang: 1
-sudo apt-get install clang 2、下载clang_complete: 1
-http://www &hellip;">
+os:ubuntu 10.04 &hellip;">
 	<head>
 <a href="https://github.com/ZuLove/zulove.github.com">
 	<img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;">
@@ -103,6 +100,86 @@ http://www &hellip;">
 <!-- begin toload --> 
     <div id="content" class="inner">
         
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/08/update-vim-latest/">
+		
+			Update_vim_latest</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T09:51:00+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<p>安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见:</p>
+
+<blockquote><p></p><footer><strong>URL:</strong> <cite><a href='http://www.vim.org/runtime.php'>www.vim.org/runtime.php/&hellip;</a></cite></footer></blockquote>
+
+
+<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装Aap(一種用於下载原始码，编译以及安裝程式的软件开发工具程式):
+下载Aap最新版本:http://sourceforge.net/projects/a-a-p/files/</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>         <span class="n">cd</span> <span class="o">~/</span><span class="err">下载</span>
+</span><span class='line'>          <span class="n">unzip</span> <span class="o">-</span><span class="n">n</span> <span class="n">aap</span><span class="o">-</span><span class="mf">1.092</span><span class="p">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">aap</span>
+</span><span class='line'>          <span class="n">cd</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">app</span>
+</span><span class='line'>          <span class="n">sudo</span> <span class="p">.</span><span class="o">/</span><span class="n">app</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Start Vim and type these commands:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>        <span class="o">:</span><span class="n">cd</span> <span class="n">$VIMRUNTIME</span>
+</span><span class='line'>        <span class="o">:!</span><span class="n">sudo</span> <span class="n">aap</span> <span class="o">-</span><span class="n">f</span> <span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/runtime/main.aap fetch</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<blockquote><p>try best,every thing will be best.</p><footer><strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;ZLove</strong></footer></blockquote>
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/08/update-vim-latest//blog/page/2/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -481,69 +558,6 @@ http://www &hellip;">
 <div class="meta">
 	
 		<span class="comments"><a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04//blog/page/2/index.html#disqus_thread">Comments</a></span>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/02/28/solve-the-debian-lang/">
-		
-			解决Debian四格问题（乱码）</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date">Published on: 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-28T01:43:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2013</time></div>
-      <div class="tags">Tags: 
-
-</div>
-    </div>
-		<p>1、用自带的firefox下载ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">http:</span><span class="c1">//mirrors.163.com/debian-archive/pool/main/t/ttf-wqy-zenhei/ttf-wqy-zenhei_0.6.26-2_all.deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、进入到下载文件所在目录：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">cd</span> <span class="n">Downloads</span><span class="o">/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、安装ttf-wqy-zenhei:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">su</span> <span class="n">root</span> <span class="err">#设置</span><span class="n">root</span>
-</span><span class='line'><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">ttf</span><span class="o">-</span><span class="n">wqy</span><span class="o">-</span><span class="n">zenhei_0</span><span class="mf">.6.26</span><span class="o">-</span><span class="mi">2</span><span class="n">_all</span><span class="p">.</span><span class="n">deb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-		
-		
-	</div>
-
-<div class="meta">
-	
-		<span class="comments"><a href="/blog/2013/02/28/solve-the-debian-lang//blog/page/2/index.html#disqus_thread">Comments</a></span>
 	
 </div>
 </article>
