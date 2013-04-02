@@ -6,9 +6,16 @@
 	<title>ZLoves world</title>
     <meta name="author" content="ZLoves world">
     
-	<meta name="description" content="Published on: Mar 8th, 2013 Tags: 安装最新的vim release版本后可以依据如下方法将vim更新到最最新的,方法很多详见: URL: www.vim.org/runtime.php/&hellip; tips: 1
+	<meta name="description" content="Published on: Mar 12th, 2013 Tags: 1
 2
-os:ubuntu 10.04 &hellip;">
+os:ubuntu 10.04
+shell:zsh-5.0.0 使用git push origin master时出现如下错误时 1
+2
+3
+4
+5
+6
+To git@github.com:ZuLove/ZVimrc. &hellip;">
 	<head>
 <a href="https://github.com/ZuLove/zulove.github.com">
 	<img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;">
@@ -100,6 +107,107 @@ os:ubuntu 10.04 &hellip;">
 <!-- begin toload --> 
     <div id="content" class="inner">
         
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/12/solve-git-push-problem/">
+		
+			解决git Push遇到的问题</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>使用git push origin master时出现如下错误时</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
+</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
+</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
+</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
+</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
+</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决办法有二：
+其一：
+打开.git/config设置如下：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
+</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
+</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面配置说明：
+1，当你处于master branch, 默认的remote就是origin。
+2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
+其二：
+使用如下两句也可解决问题：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
+</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
+</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>一切OK。</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/12/solve-git-push-problem//blog/page/2/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -373,191 +481,6 @@ os:ubuntu 10.04 &hellip;">
 <div class="meta">
 	
 		<span class="comments"><a href="/blog/2013/03/05/windows-max//blog/page/2/index.html#disqus_thread">Comments</a></span>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04/">
-		
-			Compile_vim73_in_ubuntu10.04</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date">Published on: 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-04T16:54:00+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2013</time></div>
-      <div class="tags">Tags: 
-
-</div>
-    </div>
-		<p>tips:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu10</span><span class="mf">.04</span>
-</span><span class='line'><span class="nl">Terminal:</span><span class="n">zsh</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>1、全新系统请安装如下依赖：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">xorg</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libncurses5</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnome2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgnomeui</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libgtk2</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libatk1</span><span class="mf">.0</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libbonoboui2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libcairo2</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libx11</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxpm</span><span class="o">-</span><span class="n">dev</span>
-</span><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libxt</span><span class="o">-</span><span class="n">dev</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、下载vim73:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">hg</span> <span class="n">clone</span> <span class="nl">https:</span><span class="c1">//vim.googlecode.com/hg/ vim</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>tips:安装mercurial,否则不能用hg clone</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">mercurial</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或在手工下载vim73:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">ftp:</span><span class="c1">//ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、解压vim-7.3.tar.bz2:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">vim</span><span class="o">-</span><span class="mf">7.3</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、编译：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">features</span><span class="o">=</span><span class="n">huge</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gpm</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">acl</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">x</span><span class="o">=</span><span class="n">yes</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gui</span><span class="o">=</span><span class="n">gtk2</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">multibyte</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">cscope</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">netbeans</span>  <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">perlinterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">pythoninterp</span><span class="o">=</span><span class="n">dynamic</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">rubyinterp</span><span class="o">=</span><span class="n">dynamic</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>5、安装:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>  以下是在我的电脑上编译安装所出现的问题及解决办法：
-问题1、Gtk-WARNING **: Invalid input string</p>
-
-<pre><code>              解决办法：vim ～/.vimrc  //编辑vimrc文件
-              在前面加入下面代码：
-              set langmenu=zh_CN.UTF-8                 "设置菜单语言
-</code></pre>
-
-<p>问题2、在终端中键入gvim，可以正常运行gvim，但是退出时，终端中出现类似于下面的错误提示信息</p>
-
-<pre><code>              GLib-GObject-CRITICAL ………………，键入gedit也是出现这样的问题，貌似错误信息比键入gvim时更多，
-              其实此时已经不是gvim的问题了,很可能由于用户装了gnome-globalmenu的面板工具导致的。
-              解决办法：
-              在终端中输入gconf-editor,打开配置编辑器
-              找到/apps/gnome_settings_daemon/gtk-modules/
-</code></pre>
-
-<p>去掉globalmenu-plugin前的勾</p>
-
-<p>问题3、在系统应用程序菜单中没有gvim选项，怎么办？</p>
-
-<pre><code>              解决办法：（记住，用root权限编辑）
-              打开终端，sudo vim /usr/share/applications/gvim.desktop     //没有的话，vim会提示new file
-              将下面的内容输入，
-              [Desktop Entry]  
-              Name=Gvim
-              Comment[zh_CN]=Gvim编辑器
-              Exec=gvim
-              Icon=/usr/share/icons/Macbuntu-Icons/apps/48/vim_logo.png//此处图片可自定义，大小最好为128x128,png格式
-              Terminal=false
-              X-MultipleArgs=false
-              Type=Application
-              Categories=Application;Development;
-              Encoding=UTF-8
-              StartupNotify=true 
-              Name=GVim Text Editor
-              :x保存退出
-              这时，你打开应用程序-编程菜单，便看到了GVim Text Editor
-</code></pre>
-
-<p>问题4：在中端输入gvim出现如下错误时解决办法有二：</p>
-
-<p>gvim vim command line 时发生错误: E117: 未定义的函数: Maximize_Window</p>
-
-<p>  其一：这个是zsh 配置里的第117行。可以直接删除就OK</p>
-
-<p>  其二：在.vimrc中添加如下代码：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
-</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
-</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
-</span><span class='line'>    <span class="n">endfunction</span>
-</span><span class='line'><span class="n">endif</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-		
-		
-	</div>
-
-<div class="meta">
-	
-		<span class="comments"><a href="/blog/2013/03/04/compile-vim73-in-ubuntu10-dot-04//blog/page/2/index.html#disqus_thread">Comments</a></span>
 	
 </div>
 </article>

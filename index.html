@@ -6,8 +6,10 @@
 	<title>ZLoves world</title>
     <meta name="author" content="ZLoves world">
     
-	<meta name="description" content="Published on: Apr 1st, 2013 Tags: 1、安装xfce: a)、安装xorg: 1 pacman -S xorg b)、安装图形驱动: 查看本机显卡： 1
-2 $ lspci | grep VGA nVidia Corporation GT216 [GeForce &hellip;">
+	<meta name="description" content="Published on: Apr 2nd, 2013 Tags: 1、段落，标题，区块引用 I、Markdown段落就直接写，不能有制表符，
+段落之间的空行可以直接按回车键空行即可但不能tab键再回车。
+换行在上一行的结尾添加两个以上的空格
+paragraph example: Dear &hellip;">
 	<head>
 <a href="https://github.com/ZuLove/zulove.github.com">
 	<img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;">
@@ -99,6 +101,313 @@
 <!-- begin toload --> 
     <div id="content" class="inner">
         
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/04/02/learn-markdown/">
+		
+			学习markdown</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-02T23:23:00+08:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<h2>1、段落，标题，区块引用</h2>
+
+<p>I、Markdown段落就直接写，不能有制表符，
+段落之间的空行可以直接按回车键空行即可但不能tab键再回车。<br/>
+换行在上一行的结尾添加两个以上的空格<br/>
+paragraph example:</p>
+
+<pre><code>Dear ZLove:
+This is the first paragraph.
+
+This is the last paragraph .
+</code></pre>
+
+<p>Result:<br/>
+Dear ZLove:<br/>
+This is the first paragraph.</p>
+
+<p>This is the last paragraph .<br/>
+II、Markdown标题支持两种标题的语法Setext与axt<br/>
+a)、Setext利用底线形式<br/>
+&#8217;=&#8217;顶级标题H1，&#8217;-&#8216;二级标题H2<br/>
+b)、axt利用在行首如&#8217;#&#8217;;<br/>
+&#8217;#&#8217;的数量从一到六，表示H1~H6级标题</p>
+
+<p>Title example:</p>
+
+<pre><code>This is one H1 title
+==================
+This is one H2 title
+------------------
+#This is another H1 title
+##This is another H2 title
+........
+######This is one H6 title
+</code></pre>
+
+<p>reslut:</p>
+
+<h1>This is one H1 title</h1>
+
+<h2>This is one H2 title</h2>
+
+<h1>This is another H1 title</h1>
+
+<h2>This is another H2 title</h2>
+
+<p>&#8230;&#8230;..</p>
+
+<h6>This is one H6 title</h6>
+
+<p>III、Markdown区块引用应用email的&#8217;>&#8217;尖括号。<br/>
+tips:<br/>
+区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &#8216;>&#8217;<br/>
+引用的区块内可以使用其他的 Markdown 语法，包括标题、列表、代码区块等<br/>
+example:</p>
+
+<pre><code>&gt;This is a blockquote.
+&gt;This is the second paragraph in the blockquote.
+&gt;## This is an H2 in a blockquote
+</code></pre>
+
+<p>Result:</p>
+
+<blockquote><p>This is a blockquote.<br/>
+This is the second paragraph in the blockquote.</p>
+
+<h2>This is an H2 in a blockquote</h2></blockquote>
+
+<h2>2、列表、区块代码、分隔线</h2>
+
+<p>I、Markdown列表支持有序和无序列表。<br/>
+a)、无序列表在行首使用&#8217;+&#8217;、&#8217;-&#8216;、&#8217;*&#8217;作为列表标记.<br/>
+b)、有序列表在行首使用阿拉伯数字1,2,3加.作为列表标记.<br/>
+tips:<br/>
+有序列表中的数字标记不影响输出的HTML结果<br/>
+列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符<br/>
+example:</p>
+
+<pre><code>* red
+* bule
+* gree
+5. red
+2. bule
+3. green
+</code></pre>
+
+<p>result一样: <br/>
+* red<br/>
+* bule<br/>
+* green<br/>
+tips、如果你想写下面的语句，则需用&#8217;\转移</p>
+
+<pre><code>2008. This is a beautiful year
+则需写成2008\. This is a beautiful year
+</code></pre>
+
+<p>2008. This is a beautiful year</p>
+
+<p>II、区块代码<br/>
+Markdown 中建立代码区块很简单，只要简单地留出一空行并在行首缩进 4 个空格或是 1 个制表符就可以，代码区块里面&#8217;&amp;&#8217; 、 &#8216;&lt;&#8217; 和 &#8216;>&#8217; 会自动转成 HTML 实体,不用理会<br/>
+Markdown区块代码语法如下</p>
+
+<pre><code>This is regular paragraph
+
+    &lt;code&gt;
+</code></pre>
+
+<p>example:</p>
+
+<pre><code>This a regular paragraph
+#include&lt;stdio.h&gt;
+int main()
+{
+  char name[30];
+  int n;
+  scanf("%s %d",name,&amp;n);
+  printf("%s",name);
+return 0;
+}
+</code></pre>
+
+<p>result:<br/>
+ This a regular paragraph</p>
+
+<pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+  char name[30];
+  int n;
+  scanf("%s %d",name,&amp;n);
+  printf("%s",name);
+return 0;
+}
+</code></pre>
+
+<p>III、分隔线<br/>
+Markdown分隔线语法：<br/>
+在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格<br/>
+example:</p>
+
+<pre><code>* * * *
+---
+-----------------
+_____________
+</code></pre>
+
+<p>result:</p>
+
+<hr />
+
+<h2>3、连接、强调、代码</h2>
+
+<p>I、连接包含两种语法：<br/>
+a)、行内式</p>
+
+<pre><code>[link](http://....com "Title")
+</code></pre>
+
+<p>b)、参考式</p>
+
+<pre><code>[link][id]
+[id]: http://....com "Title"
+</code></pre>
+
+<p>tips:<br/>
+Title为可选参数;<br/>
+链接内容规定如下：<br/>
+id可以是字母、数字、空白和标点符号，但是并不区分大小写<br/>
+title 属性放到下一行，也可以加一些缩进<br/>
+方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字<br/>
+接着一个冒号<br/>
+接着一个以上的空格或制表符<br/>
+接着链接的网址<br/>
+选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</p>
+
+<p>example:</p>
+
+<pre><code>This is zulove's [home page](http://zulove.github.com "ZLove").
+This is zulove's farovite [sites][hack].
+[hack]: https://news.ycombinator.com/ 'ZLove'
+</code></pre>
+
+<p>result:<br/>
+This is zulove&#8217;s <a href="http://zulove.github.com" title="ZLove">home page</a>.</p>
+
+<p>This is zulove&#8217;s farovite <a href="https://news.ycombinator.com/" title="ZLove">sites</a>.
+tips:<br/>
+隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号<br/>
+链接到同样主机的资源，可以使用相对路径:</p>
+
+<pre><code>[Google][]
+[Google]: http://google.com/
+See my [About](/about/) page for details.
+</code></pre>
+
+<p><a href="http://google.com/">Google</a></p>
+
+<h4>II、强调</h4>
+
+<p>Markdown使用(<em>)和下划线(_)表示强调：<br/>
+一个星号(</em>)或一个(_)下划线被认为是[em][/em]<br/>
+两个星号(**)或连个下划线(__)被认为是[strong][/strong]<br/>
+example:</p>
+
+<pre><code>This is a *human*
+This is a big __humman__
+</code></pre>
+
+<p>result:<br/>
+This is a <em>human</em><br/>
+This is a big <strong>humman</strong>
+tips:<br/>
+如果 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号<br/>
+如果要在文字前后直接插入普通的星号或底线，你可以用反斜线</p>
+
+<pre><code>\*this is beautiful\*
+</code></pre>
+
+<p>*this is beautiful*<br/>
+III、代码<br/>
+Markdown标记一小段行内代码用(&#8216;)<br/>
+如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段.<br/>
+代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号</p>
+
+<pre><code>这个是C打印函数 'printf()' ;
+</code></pre>
+
+<p>这个是C打印函数 &#8216;printf()&#8217; ;</p>
+
+<h2>3)、图片、自动链接、反斜杠</h2>
+
+<p>I、Markdown插入图片有两种方式：行内式和参考式</p>
+
+<pre><code>![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "title")
+![Alt text][id]
+[id]: url/to/image  "title"
+</code></pre>
+
+<p>tips:<br/>
+一个惊叹号 !<br/>
+接着一个方括号，里面放上图片的替代文字<br/>
+接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 &#8216;title&#8217; 文字。<br/>
+[id]是图片参考的名称，图片参考的定义方式则和连结参考一样<br/>
+ Markdown 没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <img> 标签<br/>
+ II、自动连接</p>
+
+<pre><code>&lt;http://&gt;
+</code></pre>
+
+<p><a href="http://zulove.github.com">http://zulove.github.com</a><br/>
+III、反斜杠<br/>
+Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号<br/>
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号:</p>
+
+<pre><code>\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+</code></pre>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/04/02/learn-markdown//index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -612,107 +921,6 @@ II、add pictures into ~/octopress/source/images/forkme.png.</p>
 <div class="meta">
 	
 		<span class="comments"><a href="/blog/2013/03/23/change-blogs-bg-header-fonts//index.html#disqus_thread">Comments</a></span>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/03/12/solve-git-push-problem/">
-		
-			解决git Push遇到的问题</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date">Published on: 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-12T00:46:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2013</time></div>
-      <div class="tags">Tags: 
-
-</div>
-    </div>
-		
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">ubuntu</span> <span class="mf">10.04</span>
-</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span><span class="o">-</span><span class="mf">5.0.0</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>使用git push origin master时出现如下错误时</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">To</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span>
-</span><span class='line'> <span class="o">!</span> <span class="p">[</span><span class="n">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="o">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span><span class="p">)</span>
-</span><span class='line'><span class="nl">error:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="err">&#39;</span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="nl">com:</span><span class="n">ZuLove</span><span class="o">/</span><span class="n">ZVimrc</span><span class="p">.</span><span class="n">git</span><span class="err">&#39;</span>
-</span><span class='line'><span class="n">To</span> <span class="n">prevent</span> <span class="n">you</span> <span class="n">from</span> <span class="n">losing</span> <span class="n">history</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">fast</span><span class="o">-</span><span class="n">forward</span> <span class="n">updates</span> <span class="n">were</span> <span class="n">rejected</span>
-</span><span class='line'><span class="n">Merge</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>  <span class="n">See</span> <span class="n">the</span> <span class="err">&#39;</span><span class="n">Note</span> <span class="n">about</span>
-</span><span class='line'><span class="n">fast</span><span class="o">-</span><span class="n">forwards</span><span class="err">&#39;</span> <span class="n">section</span> <span class="n">of</span> <span class="err">&#39;</span><span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">help</span><span class="err">&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决办法有二：
-其一：
-打开.git/config设置如下：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="p">[</span><span class="n">branch</span> <span class="s">&quot;master&quot;</span><span class="p">]</span>
-</span><span class='line'>    <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
-</span><span class='line'>    <span class="n">merge</span> <span class="o">=</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">maste</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>上面配置说明：
-1，当你处于master branch, 默认的remote就是origin。
-2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
-其二：
-使用如下两句也可解决问题：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">remote</span> <span class="n">origin</span>
-</span><span class='line'><span class="n">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">branch</span><span class="p">.</span><span class="n">master</span><span class="p">.</span><span class="n">merge</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">master</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>最后：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">git</span> <span class="n">pull</span>
-</span><span class='line'><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>一切OK。</p>
-
-		
-		
-	</div>
-
-<div class="meta">
-	
-		<span class="comments"><a href="/blog/2013/03/12/solve-git-push-problem//index.html#disqus_thread">Comments</a></span>
 	
 </div>
 </article>
