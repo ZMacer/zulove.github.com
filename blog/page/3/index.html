@@ -6,22 +6,12 @@
 	<title>ZLoves world</title>
     <meta name="author" content="ZLoves world">
     
-	<meta name="description" content="Published on: Mar 4th, 2013 Tags: tips: 1
+	<meta name="description" content="Published on: Mar 5th, 2013 Tags: tips: 1
 2
-os:ubuntu10.04
-Terminal:zsh 1、全新系统请安装如下依赖： 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-sudo apt-get install build- &hellip;">
+os:Ubuntu 10.04
+shell:zsh 5.0.0 1、安装wmctrl: 1
+sudo apt-get install wmctrl 2、在~/.zshrc中加入： 1
+alias gvim &hellip;">
 	<head>
 <a href="https://github.com/ZuLove/zulove.github.com">
 	<img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;">
@@ -113,6 +103,121 @@ sudo apt-get install build- &hellip;">
 <!-- begin toload --> 
     <div id="content" class="inner">
         
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/03/05/windows-max/">
+		
+			Linux和windows 下Gvim窗口自动最大化</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-05T21:41:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<p>tips:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="nl">os:</span><span class="n">Ubuntu</span> <span class="mf">10.04</span>
+</span><span class='line'><span class="nl">shell:</span><span class="n">zsh</span> <span class="mf">5.0.0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1、安装wmctrl:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">wmctrl</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、在~/.zshrc中加入：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">alias</span> <span class="n">gvim</span><span class="o">=</span><span class="err">&#39;</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span><span class="err">&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、在~/.vimrc中加入：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">if</span><span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s">&quot;win32&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win95&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win64&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">has</span><span class="p">(</span><span class="s">&quot;win16&quot;</span><span class="p">))</span>
+</span><span class='line'>    <span class="n">au</span>  <span class="n">GUIEnter</span> <span class="o">*</span> <span class="n">simalt</span> <span class="o">~</span><span class="n">x</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>    <span class="n">function</span> <span class="n">Maximize_Window</span><span class="p">()</span>
+</span><span class='line'>        <span class="n">silent</span> <span class="o">!</span><span class="n">wmctrl</span> <span class="o">-</span><span class="n">r</span> <span class="o">:</span><span class="nl">ACTIVE:</span> <span class="o">-</span><span class="n">b</span> <span class="n">add</span><span class="p">,</span><span class="n">maximized_vert</span><span class="p">,</span><span class="n">maximized_horz</span>
+</span><span class='line'>    <span class="n">endfunction</span>
+</span><span class='line'><span class="n">endif</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、将开始菜单中的Gvim快捷方式修改成如下：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="n">I</span><span class="err">：</span><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">applications</span><span class="o">/</span><span class="n">gvim</span><span class="p">.</span><span class="n">desktop</span>
+</span><span class='line'><span class="n">II</span><span class="err">：</span>
+</span><span class='line'><span class="p">[</span><span class="n">Desktop</span> <span class="n">Entry</span><span class="p">]</span>
+</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">Gvim</span>
+</span><span class='line'><span class="n">Comment</span><span class="p">[</span><span class="n">zh_CN</span><span class="p">]</span><span class="o">=</span><span class="n">Gvim</span><span class="err">编辑器</span>
+</span><span class='line'><span class="n">Exec</span><span class="o">=</span><span class="n">gvim</span> <span class="o">-</span><span class="n">c</span> <span class="s">&quot;call Maximize_Window()&quot;</span>
+</span><span class='line'><span class="n">Icon</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">icons</span><span class="o">/</span><span class="n">Macbuntu</span><span class="o">-</span><span class="n">Icons</span><span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="mi">48</span><span class="o">/</span><span class="n">vim_logo</span><span class="p">.</span><span class="n">png</span>
+</span><span class='line'><span class="n">Terminal</span><span class="o">=</span><span class="n">false</span>
+</span><span class='line'><span class="n">X</span><span class="o">-</span><span class="n">MultipleArgs</span><span class="o">=</span><span class="n">false</span>
+</span><span class='line'><span class="n">Type</span><span class="o">=</span><span class="n">Application</span>
+</span><span class='line'><span class="n">Categories</span><span class="o">=</span><span class="n">Application</span><span class="p">;</span><span class="n">Development</span><span class="p">;</span>
+</span><span class='line'><span class="n">Encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</span><span class='line'><span class="n">StartupNotify</span><span class="o">=</span><span class="n">true</span>
+</span><span class='line'><span class="n">Name</span><span class="o">=</span><span class="n">GVim</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/03/05/windows-max//blog/page/3/index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
 
     <article class="post">

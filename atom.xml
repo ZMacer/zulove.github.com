@@ -4,7 +4,7 @@
   <title><![CDATA[ZLoves world]]></title>
   <link href="http://ZuLove.github.com/atom.xml" rel="self"/>
   <link href="http://ZuLove.github.com/"/>
-  <updated>2013-04-03T00:35:10+08:00</updated>
+  <updated>2013-04-03T21:46:10+08:00</updated>
   <id>http://ZuLove.github.com/</id>
   <author>
     <name><![CDATA[ZLoves world]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[install-Latex]]></title>
+    <link href="http://ZuLove.github.com/blog/2013/04/03/install-latex/"/>
+    <updated>2013-04-03T21:16:00+08:00</updated>
+    <id>http://ZuLove.github.com/blog/2013/04/03/install-latex</id>
+    <content type="html"><![CDATA[<h2>1、下载在线安装LaTex脚本：</h2>
+
+<p><a href="http://ftp.ctex.org/mirrors/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz">install-tl-unx.tar.gz</a>
+再按如下命令安装:</p>
+
+<pre><code>$tar -xvf install-tl-unx.tar.gz
+$cd install-tl-20130402
+$sudo ./install-tl
+[... messages omitted ...]
+Enter command: i
+[... when done, see below for post-install ...]
+</code></pre>
+
+<p>tips:<br/>
+如果以前装过旧版本的Tex,则按如下命令清除：</p>
+
+<pre><code>$sudo rm -rf /usr/local/texlive/2012
+$rm -rf ~/.texlive2012
+</code></pre>
+
+<p>当然上面安装的方法为text模型安装，下面则为GUI图形界面安装过程：</p>
+
+<pre><code>$tar -xvf install-tl-unx.tar.gz
+$cd install-tl-20130402
+$sudo apt-get install perl-tk
+$sudo ./install-tl --gui=perltk
+</code></pre>
+
+<p>接下来就是看图说话咯<br/>
+so easy!<br/>
+漫长的等待安装结束后基本就算安装成功了，接下来就是环境变量的设置了<br/>
+设置方法按如下：</p>
+
+<pre><code>$sudo gvim /etc/profile
+</code></pre>
+
+<p>然后在profile中添加如下语句:</p>
+
+<pre><code>export PATH="$PATH:/usr/local/texlive/2012/bin/i386-linux"
+export MANPATH="$MANPATH:/usr/local/texlive/2012/texmf/doc/man"
+export INFOPATH="$INFOPATH:/usr/local/texlive/2012/texmf/doc/info"
+</code></pre>
+
+<p>测试是否安装成功如下：</p>
+
+<pre><code>$tex --version
+TeX 3.1415926 (TeX Live 2012)
+kpathsea version 6.1.0
+Copyright 2012 D.E. Knuth.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the TeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the TeX source.
+Primary author of TeX: D.E. Knuth.
+</code></pre>
+
+<p> 使整个系统中能使用<strong>TEXLive</strong>的字体：</p>
+
+<pre><code>$sudo cp /usr/local/texlive/2012/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf
+$sudo fc-cache -fsv
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[学习markdown]]></title>
