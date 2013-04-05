@@ -192,6 +192,61 @@ Primary author of TeX: D.E. Knuth.
 $sudo fc-cache -fsv
 </code></pre>
 
+<h2>Letex配置中文论文环境.</h2>
+
+<p>查看本机中文字体：</p>
+
+<pre><code>fc-list :lang=zh-cn
+</code></pre>
+
+<p>安装Latex中文支持：</p>
+
+<pre><code>sudo apt-get install latex-cjk-all 
+</code></pre>
+
+<p>注销在登录，
+新建文件2.tex输入以下内容：</p>
+
+<figure class='code'><figcaption><span> (2.tex)</span> <a href='/downloads/code/2.tex'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='tex'><span class='line'><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+</span><span class='line'><span class="k">\usepackage</span><span class="nb">{</span>CJKutf8<span class="nb">}</span>
+</span><span class='line'><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span><span class='line'><span class="k">\begin</span><span class="nb">{</span>CJK<span class="nb">}{</span>UTF8<span class="nb">}{</span>gkai<span class="nb">}</span>
+</span><span class='line'>这是一个楷体中文测试，处理简体字。
+</span><span class='line'><span class="k">\end</span><span class="nb">{</span>CJK<span class="nb">}</span>
+</span><span class='line'><span class="k">\begin</span><span class="nb">{</span>CJK<span class="nb">}{</span>UTF8<span class="nb">}{</span>gbsn<span class="nb">}</span>
+</span><span class='line'>这是一个宋体中文测试，处理简体字。
+</span><span class='line'><span class="k">\end</span><span class="nb">{</span>CJK<span class="nb">}</span>
+</span><span class='line'><span class="k">\begin</span><span class="nb">{</span>CJK<span class="nb">}{</span>UTF8<span class="nb">}{</span>bkai<span class="nb">}</span>
+</span><span class='line'>這是一個big5編碼的楷體中文測試，處理繁體文字。
+</span><span class='line'><span class="k">\end</span><span class="nb">{</span>CJK<span class="nb">}</span>
+</span><span class='line'><span class="k">\begin</span><span class="nb">{</span>CJK<span class="nb">}{</span>UTF8<span class="nb">}{</span>bsmi<span class="nb">}</span>
+</span><span class='line'>這是一個个big5編碼的明體中文測試，處理繁體文字。
+</span><span class='line'><span class="k">\end</span><span class="nb">{</span>CJK<span class="nb">}</span>
+</span><span class='line'><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>pdflatex 2.tex
+google-chrome 2.pdf
+</code></pre>
+
 		
 		
 	</div>
