@@ -6,10 +6,11 @@
 	<title>ZLoves world</title>
     <meta name="author" content="ZLoves world">
     
-	<meta name="description" content="Published on: Apr 3rd, 2013 Tags: 1、下载在线安装LaTex脚本： install-tl-unx.tar.gz
-再按如下命令安装: $tar -xvf install-tl-unx.tar.gz
-$cd install-tl-20130402
-$sudo ./ &hellip;">
+	<meta name="description" content="Published on: Apr 12th, 2013 Tags: 1、空白、制表符，多个空白一个空白字符;
+2、句首空白被忽略;&#8211;
+3、单个空行一个空白距离;&#8211;
+4、两个文本行间的一个或多个空白行一个空白行。即分段;&#8211;
+5、$、%、、&amp;、_、{、} &hellip;">
 	<head>
 <a href="https://github.com/ZuLove/zulove.github.com">
 	<img alt="Fork me on GitHub" src="/images/forkme.png" style="position:absolute; top: 0px; right: 0;"></a>
@@ -101,6 +102,67 @@ $sudo ./ &hellip;">
 <!-- begin toload --> 
     <div id="content" class="inner">
         
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/04/12/learn-tex/">
+		
+			Learn Tex</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-12T00:00:00+08:00" pubdate data-updated="true">Apr 12<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+</div>
+    </div>
+		<p>1、空白、制表符，多个空白<---------->一个空白字符;<br/>
+2、句首空白被忽略;&#8211;
+3、单个空行<---------->一个空白距离;&#8211;
+4、两个文本行间的一个或多个空白行<-------->一个空白行。即分段;&#8211;
+5、$、%、<sup>、&amp;、_、{、}<--------->前加\才能正常在输出这些字符;&#8211;</sup>
+6、&lt;&#8212;&#8211;>不能在前面加\,\为换行符；&#8211;
+7、$\backslash$<------>显示为一个‘\’;&#8211;
+8、LaTex命令<------>大小写敏感，由反斜杠+字母或者反斜杠+非字母字符组成，前者以任何非字母结束；命令后的空字符都会被忽略；&#8211;
+9、{}阻止LaTex命令吃掉后面的空字符；&#8211;
+10、LaTex后面可以用一个特殊的空格命令或在{}+空格来显示一个空格；&#8211;
+11、LaTex命令参数<----->在命令后用{parameter},可选参数在命令后用[parameter];12、%忽略%后该行的内容，或在链接没有空白的较长输入；&#8211;
+13、段落中原文打印 <----->行间语法\verb[<em>]+text+,&#8217;+&#8217;可以是除</em>或空格的任何字符&#8211;
+14、大范围的原文打印<----->\begin{verbatim[<em>]}text\end{verbatim[</em>]}&#8211;
+15、数学公式的指数和下标可以能过使用^ 和<em> 两个符号来指定&#8211;
+16、平方根 (square root) 输入用\sqrt；n 次根用\sqrt[n] 来得到。根号的大小由LATEX自动决定。如果仅仅需要根号，可以用\surd 得到。&#8211;
+17、命令\overline 和\underline 产生水平线，它们会被放在表达式的正上方或是正下方。&#8211;
+18、命令\overbrace 和\underbrace 可以在一个表达式的上方或下方生成水平括号&#8211;
+19、&#8217;、得一个&#8217;,&#8221;、得&#8221;;&#8211;
+20、向量可以通过在一个变量上方添加小箭头(arrow symbols) 来指定。为此，使用\vec 命令即可。\overrightarrow 和\overleftarrow 这两个命令可以用来表示一个从 A 到 B 的向量&#8212;
+20、\stackrel 命令会把其第一个参数中的符号以上标大小放在第二个上面，而第二个符号则以正常的位置摆放。&#8212;
+21、积分号 (integral operator) 可以用\int 产生，求和号 (sum operator) 用\sum命令，而乘积号 (product operator) 要用\prod 命令。上限和下限用^ 和</em> 来指定，如同上标与下标一样&#8212;-
+22、\ldots 得到在基线上的点列而\cdots 是上下居中的点列。另外，还有\vdots 命令产生竖直的点列，\ddots 产生对角线的点列。&#8212;-</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+		<span class="comments"><a href="/blog/2013/04/12/learn-tex//index.html#disqus_thread">Comments</a></span>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -825,62 +887,6 @@ _   底线
 <div class="meta">
 	
 		<span class="comments"><a href="/blog/2013/04/01/archlinux-xface-cn//index.html#disqus_thread">Comments</a></span>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/03/23/octopress-use-disqus/">
-		
-			Octopress使用Disqus留言系统</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date">Published on: 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-23T23:45:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2013</time></div>
-      <div class="tags">Tags: 
-
-</div>
-    </div>
-		<p>Octopress没有默认的留言系统，不过，可以使用Disqus。
-开启也Disqus留言系统也很简单，
-开启也Disqus留言系统也很简单，
-首先，需要一个Disqus帐号，注册地址:http://disqus.com/ Disqus功能强大，不仅提供独立的留言系统，还可以显示相关文章。如果你开启，相关文章的广告功能， 甚至可以通过点击量赚钱。
-其次，在_config.yml文件中开启Disqus留言系统
-如下：</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp"># Disqus Comments</span>
-</span><span class='line'><span class="nl">disqus_short_name:</span> <span class="n">zulove</span>
-</span><span class='line'><span class="nl">disqus_show_comment_count:</span> <span class="n">true</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-		
-		
-	</div>
-
-<div class="meta">
-	
-		<span class="comments"><a href="/blog/2013/03/23/octopress-use-disqus//index.html#disqus_thread">Comments</a></span>
 	
 </div>
 </article>
